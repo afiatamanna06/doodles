@@ -6,7 +6,7 @@ function NavigationBar() {
   return (
     <Box w="full" px="4" py="2">
       <Center>
-        <Flex maxW="75rem" w="full" justify="space-between" alignItems="center">
+        <Flex maxW="74rem" w="full" justify="space-between" alignItems="center">
           <Flex>
             <Image src="/logo.png" w="1.8rem" h="2rem" alt="" />
           </Flex>
