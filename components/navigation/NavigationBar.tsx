@@ -13,7 +13,7 @@ function NavigationBar() {
           <Flex display={["none", "none", "none", "flex", "flex"]} justify="center" w="full">
             <Flex flex="1" justify="center">
                 <Menu size="sm">
-                    <MenuButton as={Button} variant="ghost" fontSize="lg" rightIcon={<FiChevronDown />}>
+                    <MenuButton as={Button} variant="ghost" fontSize="xl" rightIcon={<FiChevronDown />}>
                         Doodles
                     </MenuButton>
                     <MenuList color="rgb(140, 125, 234)" boxShadow="dark-lg" borderRadius="xl">
@@ -27,7 +27,7 @@ function NavigationBar() {
             </Flex>
             <Flex flex="1" justify="center">
                 <Menu size="sm">
-                    <MenuButton as={Button} variant="ghost" fontSize="lg" rightIcon={<FiChevronDown />}>
+                    <MenuButton as={Button} variant="ghost" fontSize="xl" rightIcon={<FiChevronDown />}>
                         Space Doodles
                     </MenuButton>
                     <MenuList color="rgb(140, 125, 234)" boxShadow="dark-lg" borderRadius="xl">
@@ -39,7 +39,7 @@ function NavigationBar() {
             </Flex>
             <Flex flex="1" justify="center">
                 <Menu size="sm">
-                    <MenuButton as={Button} variant="ghost" fontSize="lg" rightIcon={<FiChevronDown />}>
+                    <MenuButton as={Button} variant="ghost" fontSize="xl" rightIcon={<FiChevronDown />}>
                         Doodles2
                     </MenuButton>
                     <MenuList color="rgb(140, 125, 234)" boxShadow="dark-lg" borderRadius="xl">
@@ -49,11 +49,11 @@ function NavigationBar() {
                 </Menu>
             </Flex>
             <Flex flex="1" justify="center">
-                <Button variant="ghost" fontSize="lg">Shop</Button>
+                <Button variant="ghost" fontSize="xl">Shop</Button>
             </Flex>
             <Flex flex="1" justify="center">
                 <Menu size="sm">
-                    <MenuButton as={Button} variant="ghost" fontSize="lg" rightIcon={<FiChevronDown />}>
+                    <MenuButton as={Button} variant="ghost" fontSize="xl" rightIcon={<FiChevronDown />}>
                         Events
                     </MenuButton>
                     <MenuList color="rgb(140, 125, 234)" boxShadow="dark-lg" borderRadius="xl">
