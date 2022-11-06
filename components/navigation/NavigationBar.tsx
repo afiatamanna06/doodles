@@ -13,10 +13,10 @@ function NavigationBar() {
           <Flex display={["none", "none", "none", "flex", "flex"]} justify="center" w="full">
             <Flex flex="1" justify="center">
                 <Menu size="sm">
-                    <MenuButton as={Button} variant="ghost" rightIcon={<FiChevronDown />}>
+                    <MenuButton as={Button} variant="ghost" fontSize="lg" rightIcon={<FiChevronDown />}>
                         Doodles
                     </MenuButton>
-                    <MenuList color="rgb(140, 125, 234)">
+                    <MenuList color="rgb(140, 125, 234)" boxShadow="dark-lg" borderRadius="xl">
                         <MenuItem>Browse</MenuItem>
                         <MenuItem>Dooplicator</MenuItem>
                         <MenuItem>Doodlebank</MenuItem>
@@ -27,10 +27,10 @@ function NavigationBar() {
             </Flex>
             <Flex flex="1" justify="center">
                 <Menu size="sm">
-                    <MenuButton as={Button} variant="ghost" rightIcon={<FiChevronDown />}>
+                    <MenuButton as={Button} variant="ghost" fontSize="lg" rightIcon={<FiChevronDown />}>
                         Space Doodles
                     </MenuButton>
-                    <MenuList color="rgb(140, 125, 234)">
+                    <MenuList color="rgb(140, 125, 234)" boxShadow="dark-lg" borderRadius="xl">
                         <MenuItem>Space Port</MenuItem>
                         <MenuItem>Launch</MenuItem>
                         <MenuItem>About</MenuItem>
@@ -39,31 +39,31 @@ function NavigationBar() {
             </Flex>
             <Flex flex="1" justify="center">
                 <Menu size="sm">
-                    <MenuButton as={Button} variant="ghost" rightIcon={<FiChevronDown />}>
+                    <MenuButton as={Button} variant="ghost" fontSize="lg" rightIcon={<FiChevronDown />}>
                         Doodles2
                     </MenuButton>
-                    <MenuList color="rgb(140, 125, 234)">
+                    <MenuList color="rgb(140, 125, 234)" boxShadow="dark-lg" borderRadius="xl">
                         <MenuItem>Genesis Box</MenuItem>
                         <MenuItem>Watch Trailer</MenuItem>
                     </MenuList>
                 </Menu>
             </Flex>
             <Flex flex="1" justify="center">
-                <Button variant="ghost">Shop</Button>
+                <Button variant="ghost" fontSize="lg">Shop</Button>
             </Flex>
             <Flex flex="1" justify="center">
                 <Menu size="sm">
-                    <MenuButton as={Button} variant="ghost" rightIcon={<FiChevronDown />}>
+                    <MenuButton as={Button} variant="ghost" fontSize="lg" rightIcon={<FiChevronDown />}>
                         Events
                     </MenuButton>
-                    <MenuList color="rgb(140, 125, 234)">
+                    <MenuList color="rgb(140, 125, 234)" boxShadow="dark-lg" borderRadius="xl">
                         <MenuItem>SXSW 2022</MenuItem>
                         <MenuItem>NFT NYC 2022</MenuItem>
                     </MenuList>
                 </Menu>
             </Flex>
           </Flex>
-          <Button bg="#5086DC" size="sm" borderRadius="lg" px="4" h="1.5rem" color="white" _hover={{ bg: "#99E2FF" }}>
+          <Button bg="#5086DC" size="sm" borderRadius="lg" px="4" h="1.5rem" color="white" _hover={{ bg: "#99E2FF", boxShadow: "dark-lg" }}>
               connect
           </Button>
         </Flex>
