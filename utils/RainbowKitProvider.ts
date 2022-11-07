@@ -1,6 +1,6 @@
 import '@rainbow-me/rainbowkit/styles.css';
-import { getDefaultWallets, lightTheme, RainbowKitProvider, Theme } from '@rainbow-me/rainbowkit';
-import { chain, configureChains, createClient, WagmiConfig } from "wagmi"
+import { getDefaultWallets, lightTheme, Theme } from '@rainbow-me/rainbowkit';
+import { chain, configureChains, createClient } from "wagmi"
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from "wagmi/providers/public"
 import merge from 'lodash.merge';
