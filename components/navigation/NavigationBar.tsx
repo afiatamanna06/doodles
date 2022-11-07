@@ -1,6 +1,7 @@
 import { Box, Button, Center, Flex, Image, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
 import React from "react";
 import { FiChevronDown } from "react-icons/fi"
+import { ConnectButton } from '@rainbow-me/rainbowkit'
 
 function NavigationBar() {
   return (
@@ -63,8 +64,7 @@ function NavigationBar() {
                 </Menu>
             </Flex>
           </Flex>
-          <Button bg="#5086DC" size="sm" borderRadius="lg" px="4" h="1.5rem" color="white" _hover={{ bg: "#99E2FF", boxShadow: "dark-lg" }}>
-              connect
+          <Button as={ConnectButton} label="connect" bg="#5086DC" size="sm" borderRadius="lg" px="4" h="1.5rem" color="white" _hover={{ bg: "#99E2FF", boxShadow: "dark-lg" }}>
           </Button>
         </Flex>
       </Center>
