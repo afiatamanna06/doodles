@@ -1,5 +1,5 @@
 import { Box, Center, Flex } from "@chakra-ui/react"
-import SignUpInput from "./SignUpInput"
+import SignUpInput from "../SignUpInput"
 
 function LatestNewsSection() {
   return (
