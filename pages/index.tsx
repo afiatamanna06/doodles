@@ -1,5 +1,6 @@
 import { Button } from '@chakra-ui/react'
 import Head from 'next/head'
+import AboutSection from '../components/home/AboutSection'
 import HomeSection from '../components/home/HomeSection'
 import LatestNewsSection from '../components/home/LatestNewsSection'
 
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
       <HomeSection />
       <LatestNewsSection />
+      <AboutSection />
     </div>
   )
 }
