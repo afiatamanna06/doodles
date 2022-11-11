@@ -83,15 +83,15 @@ export const footerLinks = [
 export const socialLinks = [
     {
         path: "/",
-        icon: <FaTwitter />,
+        icon: <FaTwitter size={20} />,
     },
     {
         path: "/",
-        icon: <FaInstagram />,
+        icon: <FaInstagram size={20} />,
     },
     {
         path: "/",
-        icon: <FaYoutube />,
+        icon: <FaYoutube size={20} />,
     },
 ]
 
