@@ -12,7 +12,7 @@ type propTypes = {
 
 function NewsStandCard({ path, image, title, source, date }: propTypes) {
   return (
-    <Link href={path} passHref>
+    <Link href={path} target="_blank" passHref>
             <Flex direction="column" color="#313A71" _hover={{ textDecoration: "underline" }} rounded="lg" bg="white" h="100%">
                 <Image src={image} w="100%" borderTopRadius="lg" minH="9rem" objectFit="cover" alt="" />
                 <Flex p="4" color="#AD9999" h="100%" direction="column" justify="space-between">
