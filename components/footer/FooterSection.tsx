@@ -30,8 +30,8 @@ function FooterSection() {
               <Box fontWeight="bold" fontSize="lg">
                 {title}
               </Box>
-              {links.map(({ path, name }) => (
-                <Link key={path} href={path} passHref>
+              {links.map(({ path, name, target }) => (
+                <Link key={path} href={path} target={ target ? "_blank" : "_self" } passHref>
                   <Box>{name}</Box>
                 </Link>
               ))}
@@ -47,8 +47,8 @@ function FooterSection() {
               <Box fontWeight="bold" fontSize="lg">
                 {title}
               </Box>
-              {links.map(({ path, name }) => (
-                <Link key={path} href={path} passHref>
+              {links.map(({ path, name, target }) => (
+                <Link key={path} target={ target ? "_blank" : "_self" } href={path} passHref>
                   <Box>{name}</Box>
                 </Link>
               ))}
@@ -69,7 +69,7 @@ function FooterSection() {
               Chat with Doodles
             </Box>
             <Box>
-              <Link href="https://discord.gg/doodles" passHref>
+              <Link href="https://discord.gg/doodles" target="_blank" passHref>
                 <Button
                   size="sm"
                   w="min-content"
@@ -102,7 +102,7 @@ function FooterSection() {
           </Flex>
           <Flex gap={3}>
             {socialLinks.map(({ path, icon }) => (
-              <Link key={path} href={path} passHref>
+              <Link key={path} href={path} target="_blank" passHref>
                 {icon}
               </Link>
             ))}

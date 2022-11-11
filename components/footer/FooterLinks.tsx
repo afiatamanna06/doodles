@@ -5,20 +5,24 @@ export const footerLinks = [
         title: "Doodles",
         links: [
             {
-                path: "/",
+                path: "https://opensea.io/collection/doodles-official",
                 name: "Browse",
+                target: true,
             },
             {
                 path: "/",
                 name: "Dooplicator",
+                target: false,
             },
             {
                 path: "/",
                 name: "About",
+                target: false,
             },
             {
-                path: "/",
+                path: "https://docs.doodles.app/",
                 name: "Docs",
+                target: true,
             },
         ]
     },
@@ -28,14 +32,17 @@ export const footerLinks = [
             {
                 path: "/",
                 name: "Space Port",
+                target: false,
             },
             {
                 path: "/",
                 name: "Launch",
+                target: false,
             },
             {
-                path: "/",
+                path: "https://docs.doodles.app/space-doodles-documentation",
                 name: "Docs",
+                target: true,
             },
         ]
     },
@@ -45,10 +52,12 @@ export const footerLinks = [
             {
                 path: "/",
                 name: "Genesis Box",
+                target: false,
             },
             {
-                path: "/",
+                path: "https://www.youtube.com/watch?v=sv9TaQ5z9jw",
                 name: "Watch Trailer",
+                target: true,
             },
         ]
     },
@@ -58,14 +67,17 @@ export const footerLinks = [
             {
                 path: "/",
                 name: "DoodlePutt",
+                target: false,
             },
             {
                 path: "/",
                 name: "NFT NYC 2022",
+                target: false,
             },
             {
                 path: "/",
                 name: "SXSW 2022",
+                target: false,
             },
         ]
     },
@@ -75,6 +87,7 @@ export const footerLinks = [
             {
                 path: "/",
                 name: "Careers",
+                target: false,
             },
         ]
     }
