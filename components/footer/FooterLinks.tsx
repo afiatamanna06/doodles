@@ -2,57 +2,82 @@ import { FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa"
 
 export const footerLinks = [
     {
-        path: "/",
-        name: "Browse",
+        title: "Doodles",
+        links: [
+            {
+                path: "/",
+                name: "Browse",
+            },
+            {
+                path: "/",
+                name: "Dooplicator",
+            },
+            {
+                path: "/",
+                name: "About",
+            },
+            {
+                path: "/",
+                name: "Docs",
+            },
+        ]
     },
     {
-        path: "/",
-        name: "Dooplicator",
+        title: "Space Doodles",
+        links: [
+            {
+                path: "/",
+                name: "Space Port",
+            },
+            {
+                path: "/",
+                name: "Launch",
+            },
+            {
+                path: "/",
+                name: "Docs",
+            },
+        ]
     },
     {
-        path: "/",
-        name: "About",
+        title: "Doodles2",
+        links: [
+            {
+                path: "/",
+                name: "Genesis Box",
+            },
+            {
+                path: "/",
+                name: "Watch Trailer",
+            },
+        ]
     },
     {
-        path: "/",
-        name: "Docs",
+        title: "Events",
+        links: [
+            {
+                path: "/",
+                name: "DoodlePutt",
+            },
+            {
+                path: "/",
+                name: "NFT NYC 2022",
+            },
+            {
+                path: "/",
+                name: "SXSW 2022",
+            },
+        ]
     },
     {
-        path: "/",
-        name: "Space Port",
-    },
-    {
-        path: "/",
-        name: "Launch",
-    },
-    {
-        path: "/",
-        name: "Docs",
-    },
-    {
-        path: "/",
-        name: "Genesis Box",
-    },
-    {
-        path: "/",
-        name: "Watch Trailer",
-    },
-    {
-        path: "/",
-        name: "DoodlePutt",
-    },
-    {
-        path: "/",
-        name: "NFT NYC 2022",
-    },
-    {
-        path: "/",
-        name: "SXSW 2022",
-    },
-    {
-        path: "/",
-        name: "Careers",
-    },
+        title: "About",
+        links: [
+            {
+                path: "/",
+                name: "Careers",
+            },
+        ]
+    }
 ]
 
 export const socialLinks = [

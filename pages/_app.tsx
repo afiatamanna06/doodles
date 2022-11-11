@@ -8,6 +8,7 @@ import { RainbowKitProvider, AvatarComponent } from '@rainbow-me/rainbowkit'
 import { WagmiConfig } from 'wagmi'
 import { myCustomTheme, wagmiClient, chains } from '../utils/RainbowKitProvider'
 import { FaUserAlt } from 'react-icons/fa'
+import FooterSection from '../components/footer/FooterSection'
 
 const CustomAvatar: AvatarComponent = ({ address, ensImage, size }) => {
   return ensImage ? (
@@ -33,6 +34,7 @@ export default function App({ Component, pageProps }: AppProps) {
           <Fonts />
           <NavigationBar />
           <Component {...pageProps} />
+          <FooterSection />
         </RainbowKitProvider>
       </WagmiConfig>
     </ChakraProvider>
