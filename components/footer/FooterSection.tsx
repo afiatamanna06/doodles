@@ -76,6 +76,7 @@ function FooterSection() {
                   border="2px"
                   borderBottomWidth="4px"
                   color="#6681c5"
+                  px="6"
                   borderColor="#6681c5"
                   borderRadius="lg"
                 >

@@ -82,15 +82,15 @@ export const footerLinks = [
 
 export const socialLinks = [
     {
-        path: "/",
+        path: "https://twitter.com/doodles",
         icon: <FaTwitter size={20} />,
     },
     {
-        path: "/",
+        path: "https://instagram.com/welikethedoodles",
         icon: <FaInstagram size={20} />,
     },
     {
-        path: "/",
+        path: "https://www.youtube.com/channel/UCtPrgLDvHqOCAG8K4E1Cw6g",
         icon: <FaYoutube size={20} />,
     },
 ]
