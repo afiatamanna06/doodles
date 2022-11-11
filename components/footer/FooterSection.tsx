@@ -1,17 +1,59 @@
-import { Box, Center, Flex } from "@chakra-ui/react";
+import { Box, Button, Center, Flex } from "@chakra-ui/react";
+import Link from "next/link";
+import { footerLinks } from "./FooterLinks";
+import { FaDiscord } from "react-icons/fa"
 
 function FooterSection() {
   return (
-    <Box w="full" bg="#FFA4D4" px="4" py="28">
-      <Center>
-        <Flex maxW="74rem" gap={5} direction={["column"]} color="white" w="full" alignItems={["center"]}>
-            <Flex>
-
+    <Flex justify={["start", "start", "start", "center", "center"]} w="full" bg="#FFA4D4" px={["6", "6", "8", "0", "0"]} py={["12", "12", "", "8", "8"]}>
+        <Flex
+          maxW="74rem"
+          gap={5}
+          direction={["column"]}
+          color="white"
+          w="full"
+          alignItems={["start", "start", "start", "center", "center"]}
+        >
+          <Flex
+            direction={["column", "column", "column", "row", "row"]}
+            gap={[8, 8, 8, 20, 20]}
+          >
+            {footerLinks.slice(0, 3).map(({ title, links }) => (
+              <Flex key={title} direction="column">
+                <Box fontWeight="bold" fontSize="lg">{title}</Box>
+                {links.map(({ path, name }) => (
+                  <Link key={path} href={path} passHref>
+                    <Box>{name}</Box>
+                  </Link>
+                ))}
+              </Flex>
+            ))}
+            <Link href="/" passHref>
+              <Box fontWeight="bold" fontSize="lg">Shop</Box>
+            </Link>
+            {footerLinks.slice(3, 5).map(({ title, links }) => (
+              <Flex key={title} direction="column">
+                <Box fontWeight="bold" fontSize="lg">{title}</Box>
+                {links.map(({ path, name }) => (
+                  <Link key={path} href={path} passHref>
+                    <Box>{name}</Box>
+                  </Link>
+                ))}
+              </Flex>
+            ))}
+            <Flex gap={2} w="full" direction={["row", "row", "row", "column", "column"]}>
+              <Box fontWeight="bold" fontSize="lg">Chat with Doodles</Box>
+              <Button size="sm" w="min-content" border="2px" borderBottomWidth="4px" color="#6681c5" borderColor="#6681c5" borderRadius="lg">
+                <Flex gap={2} alignItems="center">
+                    <FaDiscord size={18} />
+                    <Box fontSize="sm">join discord</Box>
+                </Flex>
+              </Button>
             </Flex>
+          </Flex>
         </Flex>
-      </Center>
-    </Box>
-  )
+    </Flex>
+  );
 }
 
-export default FooterSection
+export default FooterSection;
