@@ -17,6 +17,52 @@ function GenesisBox() {
           alignItems={["center"]}
         >
           <Flex
+            direction="column"
+            w="full"
+            display={["flex", "flex", "flex", "none", "none"]}
+          >
+            <Image src="/text_genbox-promo-mobile.png" w="100%" alt="" />
+            <Flex
+              color="white"
+              mt="5"
+              bgImage="url('/genbox_header_mobile.png')"
+              bgSize={["cover"]}
+              bgPosition="center"
+              borderRadius="2xl"
+              bgRepeat="no-repeat"
+              w="full"
+              justify={["center"]}
+            >
+              <Image src="/genbox.gif" w="25rem" h="100%" alt="" />
+            </Flex>
+            <Box
+              textAlign="center"
+              color="#313A71"
+              fontSize="xl"
+              fontWeight="medium"
+              py="12"
+            >
+              Genesis boxes contain a rare assortment of apparel and accessories
+              you can use on day one of Doodles 2.
+            </Box>
+            <Button
+              borderBottomWidth="2px"
+              color="white"
+              borderColor="#6681c5"
+              px={8}
+              bg="#80B1FF"
+              py={8}
+              mb="3"
+              borderRadius="xl"
+            >
+              <Box fontSize="xl">buy on opensea</Box>
+            </Button>
+            <Box color="#313A71" textAlign="center" fontWeight="medium" fontSize="lg">
+              learn more
+            </Box>
+          </Flex>
+          <Flex
+            display={["none", "none", "none", "flex", "flex"]}
             maxW="74rem"
             color="white"
             bgImage="url('/genbox.png')"
@@ -34,13 +80,18 @@ function GenesisBox() {
               maxH={["100%", "100%", "100%", "27rem"]}
               p="14"
             >
-              <Flex direction="column" gap="8" display={["none", "none", "none", "flex", "flex"]}>
+              <Flex direction="column" gap="8">
                 <Image src="/text_genbox-promo.png" w="70%" alt="" />
                 <Box maxW={["35rem"]} fontSize="xl" fontWeight="medium">
                   Genesis boxes contain a rare assortment of apparel and
                   accessories you can use on day one of Doodles 2.
                 </Box>
-                <Flex direction="column" gap={3} w="min-content" alignItems="center">
+                <Flex
+                  direction="column"
+                  gap={3}
+                  w="min-content"
+                  alignItems="center"
+                >
                   <Button
                     borderBottomWidth="2px"
                     color="white"
@@ -52,7 +103,13 @@ function GenesisBox() {
                   >
                     <Box fontSize="lg">buy on opensea</Box>
                   </Button>
-                  <Box textShadow="0px 2px #2e2731" fontWeight="medium" fontSize="lg">learn more</Box>
+                  <Box
+                    textShadow="0px 2px #2e2731"
+                    fontWeight="medium"
+                    fontSize="lg"
+                  >
+                    learn more
+                  </Box>
                 </Flex>
               </Flex>
               <Image src="/genbox.gif" w="25rem" h="100%" alt="" />
