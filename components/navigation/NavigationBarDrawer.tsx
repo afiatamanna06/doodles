@@ -1,37 +1,87 @@
-import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Button, Collapse, Flex, useDisclosure } from "@chakra-ui/react";
+import {
+  Accordion,
+  AccordionButton,
+  AccordionIcon,
+  AccordionItem,
+  AccordionPanel,
+  Box,
+  Button,
+  Collapse,
+  Flex,
+  useDisclosure,
+} from "@chakra-ui/react";
+import Link from "next/link";
+import { navigationLinks } from "./NavigationLinks";
 
 function NavigationBarDrawer() {
   return (
     <Flex justify="center">
-      <Flex direction="column">
-        <Box>
+      <Flex direction="column" alignItems="center">
           <Accordion allowToggle>
-            <AccordionItem border="0px">
-
-                <AccordionButton>
-                  <Box flex="1" textAlign="left">
-                    Section 1 title
-                  </Box>
-                  <AccordionIcon />
-                </AccordionButton>
-              <AccordionPanel pb={4}>
-                Browse
-              </AccordionPanel>
-            </AccordionItem>
-
-            <AccordionItem border="0px">
-                <AccordionButton>
-                  <Box flex="1" textAlign="left">
-                    Section 2 title
-                  </Box>
-                  <AccordionIcon />
-                </AccordionButton>
-              <AccordionPanel pb={4}>
-                Browse
-              </AccordionPanel>
-            </AccordionItem>
+            {navigationLinks.slice(0, 3).map(({ title, links }) => (
+              <AccordionItem border="0px" key={title}>
+                <Flex direction="column" alignItems="center">
+                  <AccordionButton>
+                    <Box
+                      flex="1"
+                      textAlign="left"
+                      fontWeight="bold"
+                      fontSize="lg"
+                    >
+                      {title}
+                    </Box>
+                    <AccordionIcon />
+                  </AccordionButton>
+                  <AccordionPanel pb={4}>
+                    {links.map(({ path, name, target }) => (
+                      <Link
+                        key={path}
+                        href={path}
+                        target={target ? "_blank" : "_self"}
+                        passHref
+                      >
+                        <Box textAlign="center" color="#6681c5">{name}</Box>
+                      </Link>
+                    ))}
+                  </AccordionPanel>
+                </Flex>
+              </AccordionItem>
+            ))}
+            <Link href="/" passHref>
+              <Box fontWeight="bold" textAlign="center" fontSize="lg">
+                Shop
+              </Box>
+            </Link>
+            {navigationLinks.slice(3, 5).map(({ title, links }) => (
+              <AccordionItem border="0px" key={title}>
+                <Flex direction="column" alignItems="center">
+                  <AccordionButton>
+                    <Box
+                      flex="1"
+                      textAlign="left"
+                      fontWeight="bold"
+                      fontSize="lg"
+                    >
+                      {title}
+                    </Box>
+                    <AccordionIcon />
+                  </AccordionButton>
+                  <AccordionPanel pb={4}>
+                    {links.map(({ path, name, target }) => (
+                      <Link
+                        key={path}
+                        href={path}
+                        target={target ? "_blank" : "_self"}
+                        passHref
+                      >
+                        <Box textAlign="center" color="#6681c5">{name}</Box>
+                      </Link>
+                    ))}
+                  </AccordionPanel>
+                </Flex>
+              </AccordionItem>
+            ))}
           </Accordion>
-        </Box>
       </Flex>
     </Flex>
   );

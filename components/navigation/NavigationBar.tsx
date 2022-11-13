@@ -51,7 +51,7 @@ function NavigationBar() {
                 </DrawerHeader>
                 <DrawerFooter borderTopWidth="1px">
                   <Flex justify="center" w="full" onClick={onClose}>
-                    <IoClose size={40} />
+                    <IoClose size={40} color="#D1B6B6" />
                   </Flex>
                 </DrawerFooter>
               </DrawerContent>
