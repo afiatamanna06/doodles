@@ -1,7 +1,6 @@
 import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Button, Collapse, Flex, useDisclosure } from "@chakra-ui/react";
 
 function NavigationBarDrawer() {
-  const { isOpen, onToggle } = useDisclosure();
   return (
     <Flex justify="center">
       <Flex direction="column">
