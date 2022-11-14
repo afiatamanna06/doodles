@@ -1,4 +1,5 @@
 import { Box, Button, Flex, Image } from "@chakra-ui/react";
+import Link from "next/link";
 
 function GenesisBoxWeb() {
   return (
@@ -28,17 +29,19 @@ function GenesisBoxWeb() {
             you can use on day one of Doodles 2.
           </Box>
           <Flex direction="column" gap={3} w="min-content" alignItems="center">
-            <Button
-              borderBottomWidth="2px"
-              color="white"
-              borderColor="#6681c5"
-              px={8}
-              bg="#80B1FF"
-              py={6}
-              borderRadius="xl"
-            >
-              <Box fontSize="lg">buy on opensea</Box>
-            </Button>
+            <Link href="https://opensea.io/collection/genesis-box" target="_blank" passHref>
+              <Button
+                borderBottomWidth="2px"
+                color="white"
+                borderColor="#6681c5"
+                px={8}
+                bg="#80B1FF"
+                py={6}
+                borderRadius="xl"
+              >
+                <Box fontSize="lg">buy on opensea</Box>
+              </Button>
+            </Link>
             <Box textShadow="0px 2px #2e2731" fontWeight="medium" fontSize="lg">
               learn more
             </Box>

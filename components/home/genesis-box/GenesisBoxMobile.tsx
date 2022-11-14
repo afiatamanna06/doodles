@@ -1,10 +1,12 @@
 import { Box, Button, Flex, Image } from "@chakra-ui/react";
+import Link from "next/link";
 
 function GenesisBoxMobile() {
   return (
     <Flex
       direction="column"
       w="full"
+      alignItems="center"
       display={["flex", "flex", "flex", "none", "none"]}
     >
       <Image src="/text_genbox-promo-mobile.png" w="100%" alt="" />
@@ -31,18 +33,22 @@ function GenesisBoxMobile() {
         Genesis boxes contain a rare assortment of apparel and accessories you
         can use on day one of Doodles 2.
       </Box>
-      <Button
-        borderBottomWidth="2px"
-        color="white"
-        borderColor="#6681c5"
-        px={8}
-        bg="#80B1FF"
-        py={8}
-        mb="3"
-        borderRadius="xl"
-      >
-        <Box fontSize="xl">buy on opensea</Box>
-      </Button>
+      <Box>
+        <Link href="https://opensea.io/collection/genesis-box" target="_blank" passHref>
+          <Button
+            borderBottomWidth="2px"
+            color="white"
+            borderColor="#6681c5"
+            px={8}
+            bg="#80B1FF"
+            py={8}
+            mb="3"
+            borderRadius="xl"
+          >
+            <Box fontSize="xl">buy on opensea</Box>
+          </Button>
+        </Link>
+      </Box>
       <Box color="#313A71" textAlign="center" fontWeight="medium" fontSize="lg">
         learn more
       </Box>
