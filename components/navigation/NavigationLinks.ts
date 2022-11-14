@@ -8,7 +8,7 @@ export const navigationLinks = [
                 target: true,
             },
             {
-                path: "/",
+                path: "/dooplicator",
                 name: "Dooplicator",
                 target: false,
             },

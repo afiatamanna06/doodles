@@ -10,7 +10,7 @@ export const footerLinks = [
                 target: true,
             },
             {
-                path: "/",
+                path: "/dooplicator",
                 name: "Dooplicator",
                 target: false,
             },
