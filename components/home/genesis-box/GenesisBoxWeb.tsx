@@ -38,6 +38,9 @@ function GenesisBoxWeb() {
                 bg="#80B1FF"
                 py={6}
                 borderRadius="xl"
+                _hover={{ opacity: ".85" }}
+                _active={{ opacity: ".85" }}
+                _focus={{ opacity: ".85" }}
               >
                 <Box fontSize="lg">buy on opensea</Box>
               </Button>

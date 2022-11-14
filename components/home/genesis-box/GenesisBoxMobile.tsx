@@ -44,6 +44,9 @@ function GenesisBoxMobile() {
             py={8}
             mb="3"
             borderRadius="xl"
+            _hover={{ opacity: ".85" }}
+            _active={{ opacity: ".85" }}
+            _focus={{ opacity: ".85" }}
           >
             <Box fontSize="xl">buy on opensea</Box>
           </Button>
