@@ -3,8 +3,6 @@ import {
   Button,
   Center,
   Drawer,
-  DrawerBody,
-  DrawerCloseButton,
   DrawerContent,
   DrawerFooter,
   DrawerHeader,
@@ -37,6 +35,7 @@ function NavigationBar() {
               p="2"
               display={["block", "block", "block", "none", "none"]}
               onClick={onOpen}
+              cursor="pointer"
             >
               <FiMenu color="black" size={22} />
             </Box>
