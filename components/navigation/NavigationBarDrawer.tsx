@@ -47,7 +47,7 @@ function NavigationBarDrawer() {
                 </Flex>
               </AccordionItem>
             ))}
-            <Link href="/" passHref>
+            <Link href="https://shop.doodles.app/password" target="_blank" passHref>
               <Box fontWeight="bold" textAlign="center" fontSize="lg">
                 Shop
               </Box>

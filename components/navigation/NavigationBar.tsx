@@ -94,7 +94,7 @@ function NavigationBar() {
               </Flex>
             ))}
             <Flex flex="1" justify="center">
-              <Link href="/" passHref>
+              <Link href="https://shop.doodles.app/password" target="_blank" passHref>
                 <Button variant="ghost" fontSize="xl">
                   Shop
                 </Button>

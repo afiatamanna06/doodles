@@ -37,7 +37,7 @@ function FooterSection() {
               ))}
             </Flex>
           ))}
-          <Link href="/" passHref>
+          <Link href="https://shop.doodles.app/password" target="_blank" passHref>
             <Box fontWeight="bold" fontSize="lg">
               Shop
             </Box>
