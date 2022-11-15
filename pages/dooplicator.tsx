@@ -20,8 +20,8 @@ function Dooplicator() {
           w={["100%", "100%", "70%", "50%", "50%"]}
           alt=""
         />
-        <Flex direction="column" gap={[5, 5, 5, 8, 8]} alignItems={["center", "center", "center",  "start",  "start"]}>
-          <Flex gap={[0, 0, 0, 12, 12]} justify={["center", "center", "center",  "start",  "start"]}>
+        <Flex direction="column" gap={[5, 5, 5, 8, 8]} alignItems={["center", "center", "start",  "start",  "start"]}>
+          <Flex gap={[0, 0, 0, 12, 12]} justify={["center", "center", "start",  "start",  "start"]}>
             <Image
               src="/text_dooplicator.png"
               w={["85%", "85%", "70%", "55%", "55%"]}
@@ -44,7 +44,7 @@ function Dooplicator() {
             one functional piece of Doodle machinery containing nebulous Doodley
             matter.
           </Box>
-          <Flex gap={[0, 0, 0, 12, 12]} fontSize="lg" direction={["column", "column", "column", "row", "row"]} alignItems={["center", "center", "center",  "start",  "start"]}>
+          <Flex gap={[0, 0, 0, 12, 12]} fontSize="lg" direction={["column", "column", "column", "row", "row"]} alignItems={["center", "center", "start",  "start",  "start"]}>
             <Flex gap={1}>
               <Box>MAX SUPPLY:</Box>
               <Link
