@@ -7,6 +7,7 @@ function Dooplicator() {
       <Flex
         pt="24"
         pb="12"
+        px={["6", "6", "16", "16", "0"]}
         maxW="74rem"
         gap={[5, 5, 5, 0, 0]}
         direction={["column", "column", "column", "row", "row"]}
@@ -19,8 +20,8 @@ function Dooplicator() {
           w={["100%", "100%", "70%", "50%", "50%"]}
           alt=""
         />
-        <Flex direction="column" gap={[5, 5, 5, 8, 8]}>
-          <Flex gap={[0, 0, 0, 12, 12]}>
+        <Flex direction="column" gap={[5, 5, 5, 8, 8]} alignItems={["center", "center", "center",  "start",  "start"]}>
+          <Flex gap={[0, 0, 0, 12, 12]} justify={["center", "center", "center",  "start",  "start"]}>
             <Image
               src="/text_dooplicator.png"
               w={["85%", "85%", "70%", "55%", "55%"]}
@@ -43,7 +44,7 @@ function Dooplicator() {
             one functional piece of Doodle machinery containing nebulous Doodley
             matter.
           </Box>
-          <Flex gap={[0, 0, 0, 12, 12]} fontSize="lg">
+          <Flex gap={[0, 0, 0, 12, 12]} fontSize="lg" direction={["column", "column", "column", "row", "row"]} alignItems={["center", "center", "center",  "start",  "start"]}>
             <Flex gap={1}>
               <Box>MAX SUPPLY:</Box>
               <Link
@@ -62,26 +63,28 @@ function Dooplicator() {
             h="min-content"
             alt=""
           />
-          <Link
-            href="https://opensea.io/collection/the-dooplicator"
-            target="_blank"
-            passHref
-          >
-            <Button
-              border="2px"
-              borderColor="#6681c5"
-              px={8}
-              borderBottomWidth="4px"
-              color="#6681c5"
-              py={6}
-              borderRadius="xl"
-              _hover={{ opacity: ".85" }}
-              _active={{ opacity: ".85" }}
-              _focus={{ opacity: ".85" }}
+          <Box w="full">
+            <Link
+              href="https://opensea.io/collection/the-dooplicator"
+              target="_blank"
+              passHref
             >
-              <Box fontSize="lg">buy on opensea</Box>
-            </Button>
-          </Link>
+              <Button
+                border="2px"
+                borderColor="#6681c5"
+                px={8}
+                borderBottomWidth="4px"
+                color="#6681c5"
+                py={6}
+                borderRadius="xl"
+                _hover={{ opacity: ".85" }}
+                _active={{ opacity: ".85" }}
+                _focus={{ opacity: ".85" }}
+              >
+                <Box fontSize="lg">buy on opensea</Box>
+              </Button>
+            </Link>
+          </Box>
         </Flex>
       </Flex>
     </Flex>
