@@ -13,9 +13,9 @@ export const navigationLinks = [
                 target: false,
             },
             {
-                path: "/",
+                path: "https://forum.doodles.app/",
                 name: "Doodlebank",
-                target: false,
+                target: true,
             },
             {
                 path: "/",
