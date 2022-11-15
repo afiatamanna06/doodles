@@ -78,7 +78,7 @@ export const navigationLinks = [
                 target: false,
             },
             {
-                path: "/",
+                path: "/events/sxsw-2022",
                 name: "SXSW 2022",
                 target: false,
             },

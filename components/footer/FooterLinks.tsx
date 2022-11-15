@@ -75,7 +75,7 @@ export const footerLinks = [
                 target: false,
             },
             {
-                path: "/",
+                path: "/events/sxsw-2022",
                 name: "SXSW 2022",
                 target: false,
             },
