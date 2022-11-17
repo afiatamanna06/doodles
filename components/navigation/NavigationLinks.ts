@@ -18,7 +18,7 @@ export const navigationLinks = [
                 target: true,
             },
             {
-                path: "/",
+                path: "/about",
                 name: "About",
                 target: false,
             },
