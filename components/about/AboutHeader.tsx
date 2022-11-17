@@ -9,7 +9,7 @@ function AboutHeader() {
       <AboutMarquee direction="left" />
       <AboutMarquee direction='right' />
       <AboutMarquee direction="left" />
-      <Image position="absolute" zIndex={2} top={["43%"]} left={["15%", "15%", "20%", "40%", "37%"]} w={["70%", "70%", "60%", "25%"]} src="/logo_outline.png" alt="" />
+      <Image position="absolute" zIndex={2} top={["43%", "43%", "43%", "44%", "41%"]} left={["15%", "15%", "20%", "40%", "37%"]} w={["70%", "70%", "60%", "25%"]} src="/logo_outline.png" alt="" />
     </Flex>
   )
 }
