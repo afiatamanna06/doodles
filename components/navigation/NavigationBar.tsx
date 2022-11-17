@@ -26,7 +26,7 @@ import { navigationLinks } from "./NavigationLinks";
 function NavigationBar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <Box w="full" px="4" py="2" borderBottom="1px" borderColor="blackAlpha.400">
+    <Box w="full" zIndex={99} px="4" py="2" borderBottom="1px" borderColor="blackAlpha.400">
       <Center>
         <Flex maxW="74rem" w="full" justify="space-between" alignItems="center">
           <Flex alignItems="center">
@@ -78,6 +78,7 @@ function NavigationBar() {
                     color="rgb(140, 125, 234)"
                     boxShadow="dark-lg"
                     borderRadius="xl"
+                    zIndex={99}
                   >
                     {links.map(({ path, name, target }) => (
                       <Link
@@ -115,6 +116,7 @@ function NavigationBar() {
                     color="rgb(140, 125, 234)"
                     boxShadow="dark-lg"
                     borderRadius="xl"
+                    zIndex={99}
                   >
                     {links.map(({ path, name, target }) => (
                       <Link
