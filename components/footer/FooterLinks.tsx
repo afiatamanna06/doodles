@@ -15,7 +15,7 @@ export const footerLinks = [
                 target: false,
             },
             {
-                path: "/",
+                path: "/about",
                 name: "About",
                 target: false,
             },
