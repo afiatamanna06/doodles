@@ -1,6 +1,7 @@
 import { Box, Button, Center, Flex, Image } from "@chakra-ui/react";
 import Link from "next/link";
 import { Parallax } from "react-scroll-parallax";
+import { aboutDescriptionImageData } from "./AboutDescriptionImage";
 
 function AboutDescription() {
   return (
@@ -64,38 +65,42 @@ function AboutDescription() {
           </Flex>
           <Flex gap={8} display={["none", "none", "none", "flex", "flex"]}>
             <Flex direction="column">
-              <Parallax speed={14}>
-                <Image src="/doodle-card-mascot.png" w={["100%"]} alt="" />
-              </Parallax>
-              <Parallax speed={14}>
-                <Image src="/doodle-card-rare.png" w={["100%"]} alt="" />
-              </Parallax>
+              {aboutDescriptionImageData.slice(0, 2).map(({ image, path }) => (
+                <Parallax speed={14} key={path}>
+                  <Link href={path} target="_blank" passHref>
+                    <Image src={image} w={["100%"]} alt="" />
+                  </Link>
+                </Parallax>
+              ))}
             </Flex>
             <Flex direction="column" gap={6} mt="20">
-              <Parallax speed={8}>
-                <Image src="/doodle-card-alien.png" w={["100%"]} alt="" />
-              </Parallax>
-              <Parallax speed={8}>
-                <Image src="/doodle-card-common.png" w={["100%"]} alt="" />
-              </Parallax>
+              {aboutDescriptionImageData.slice(2, 4).map(({ image, path }) => (
+                <Parallax speed={8} key={path}>
+                  <Link href={path} target="_blank" passHref>
+                    <Image src={image} w={["100%"]} alt="" />
+                  </Link>
+                </Parallax>
+              ))}
             </Flex>
           </Flex>
           <Flex gap={8} display={["flex", "flex", "flex", "none", "none"]}>
             <Flex direction="column" gap={5}>
-              <Parallax speed={3}>
-                <Image src="/doodle-card-mascot.png" w={["100%"]} alt="" />
-              </Parallax>
-              <Parallax speed={3}>
-                <Image src="/doodle-card-rare.png" w={["100%"]} alt="" />
-              </Parallax>
+              {aboutDescriptionImageData.slice(0, 2).map(({ image, path }) => (
+                <Parallax speed={3} key={path}>
+                  <Link href={path} target="_blank" passHref>
+                    <Image src={image} w={["100%"]} alt="" />
+                  </Link>
+                </Parallax>
+              ))}
             </Flex>
             <Flex direction="column" gap={6} mt="20">
-              <Parallax speed={2}>
-                <Image src="/doodle-card-alien.png" w={["100%"]} alt="" />
-              </Parallax>
-              <Parallax speed={2}>
-                <Image src="/doodle-card-common.png" w={["100%"]} alt="" />
-              </Parallax>
+              {aboutDescriptionImageData.slice(2, 4).map(({ image, path }) => (
+                <Parallax speed={2} key={path}>
+                  <Link href={path} target="_blank" passHref>
+                    <Image src={image} w={["100%"]} alt="" />
+                  </Link>
+                </Parallax>
+              ))}
             </Flex>
           </Flex>
         </Flex>
