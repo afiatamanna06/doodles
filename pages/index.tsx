@@ -11,7 +11,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Doodles</title>
-        <meta name="description" content="A clone of doodles website" />
+        <meta name="description" content="A community driven collectible nft project by Burnt Toast, Poopie Cat, and Tulip • ᴗ •" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <HomeSection />
