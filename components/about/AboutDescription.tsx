@@ -16,7 +16,7 @@ function AboutDescription() {
           <Flex direction="column" gap={8}>
             <Image
               src="/logo-01.svg"
-              w={["40%", "40%", "30%", "12%", "12%"]}
+              w={["40%", "40%", "30%", "20%", "20%"]}
               alt=""
             />
             <Box fontSize={["xl", "xl", "xl", "2xl"]}>
