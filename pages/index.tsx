@@ -11,6 +11,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Doodles</title>
+        <meta property="og:image" content="https://doodles.app/images/og.png" />
         <meta name="description" content="A community driven collectible nft project by Burnt Toast, Poopie Cat, and Tulip • ᴗ •" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
