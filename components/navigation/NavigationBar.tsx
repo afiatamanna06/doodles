@@ -30,7 +30,9 @@ function NavigationBar() {
       <Center>
         <Flex maxW="74rem" w="full" justify="space-between" alignItems="center">
           <Flex alignItems="center">
-            <Image src="/logo.png" w="1.8rem" h="2rem" alt="" />
+            <Link href="/" passHref>
+              <Image src="/logo.png" w="1.8rem" h="2rem" alt="" />
+            </Link>
             <Box
               p="2"
               display={["block", "block", "block", "none", "none"]}
