@@ -16,7 +16,7 @@ function SpaceDoodlesMobile() {
       pb="40"
       gap={12}
       position="relative"
-      bgPosition="right"
+      bgPosition="center"
       borderRadius="2xl"
       bgRepeat="no-repeat"
     >

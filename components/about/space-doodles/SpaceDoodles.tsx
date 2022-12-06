@@ -15,7 +15,7 @@ function SpaceDoodles() {
           maxW="74rem"
           color="white"
           w="full"
-          p={[4, 4, 4, 4, 0]}
+          px={[4, 4, 4, 4, 0]}
           alignItems={["center"]}
         >
             <SpaceDoodlesWeb />
