@@ -7,10 +7,10 @@ import SpaceDoodles from "../components/about/space-doodles/SpaceDoodles";
 
 function About() {
   return (
-    <Flex direction="column" w="full">
+    <Flex direction="column" w="full" bgGradient="linear(180deg, #FFFFFF 70%, #99E2FF)">
       <AboutHeader />
       <AboutDescription />
-      <Box w="full" bg="white" px="6" pb="12">
+      <Box w="full" px="6" pb="12">
         <Center>
           <Flex
             maxW="74rem"
@@ -36,7 +36,7 @@ function About() {
         </Center>
       </Box>
       <SpaceDoodles />
-      <Box w="full" bg="white" px="4" py="8">
+      <Box w="full" px="4" py="8">
         <Center>
           <Flex
             maxW="74rem"
