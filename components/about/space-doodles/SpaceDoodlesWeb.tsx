@@ -21,11 +21,11 @@ function SpaceDoodlesWeb() {
       <Flex gap={10}>
         <Image src="/space_doodles_logo_new.png" w="20%" h="65%" alt="" />
         <Flex direction="column" gap={6}>
-          <Box fontSize={["xl", "xl", "xl", "2xl"]}>
+          <Box fontSize={["xl", "xl", "xl", "2xl"]} textShadow="1px 2px 0px #80b1ff">
             Space Doodles is the first, small step towards discovering the
             Doodle universe with dozens of spacecraft designed by Burnt Toast.
           </Box>
-          <Box>
+          <Box fontSize="lg">
             All Original Doodles receive a free ship and can launch it into
             space where it will sync with its pilot and establish attributes
             like “bladder management”, “piloting ability”, and more.
@@ -37,10 +37,10 @@ function SpaceDoodlesWeb() {
               passHref
             >
               <Button
-                borderColor="#6681c5"
+                borderColor="#a4a4f4"
                 px={8}
                 borderBottomWidth="2px"
-                color="#6681c5"
+                color="#6b6b9f"
                 borderRadius="lg"
                 _hover={{ opacity: ".85" }}
                 _active={{ opacity: ".85" }}
