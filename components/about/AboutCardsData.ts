@@ -1,16 +1,18 @@
 export const aboutCardsData = [
     {
-        path: "https://www.forbes.com/sites/mariagraciasantillanalinares/2022/09/13/reddits-ohanian-leads-54-million-doodles-capital-raise",
-        image: "/canon.png",
-        title: "Reddit's Ohanian Leads $54 Million Doodles Capital Raise",
-        source: "Forbes",
-        date: "Sep 13, 2022",
+        path: "/dooplicator",
+        link: "Learn more about the dooplicator",
+        description: "An ordinary device that comes with extraordinary powers that can be used in Doodles 2.",
+        image: "/dooplicator-tilted.png",
+        bg: "#ffc2df",
+        titleImg: "/text_dooplicator.png"
     },
     {
-        path: "https://www.fastcompany.com/90783396/doodles-domination-how-a-1-year-old-nft-project-turned-into-the-next-big-thing",
-        image: "/dood-logo.png",
-        title: "Doodles Domination: How a 1-year-old NFT project turned into the next big thing",
-        source: "FastCompany",
-        date: "Sep 13, 2022",
+        path: "https://forum.doodles.app/",
+        link: "View recent proposals",
+        description: "A community-lead treasury for Doodle holders to propose ways to use funds to expand the reach of the Doodles brand.",
+        image: "/doodlebank_piggy.png",
+        bg: "#c5c5ff",
+        titleImg: "/text_doodlebank.png"
     },
 ]
