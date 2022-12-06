@@ -5,30 +5,33 @@ function SpaceDoodlesTab() {
   return (
     <Flex
       display={["none", "none", "flex", "none", "none"]}
-      maxW="74rem"
       color="white"
       direction="column"
       bgImage="url('/bg_space-rounded-planet.png')"
       bgSize={["cover"]}
-      p="20"
-      gap={16}
+      px="8"
+      pt="12"
+      pb="20"
       bgPosition="right"
       borderRadius="2xl"
       bgRepeat="no-repeat"
       w="full"
+      justify="start"
       alignItems={["start"]}
     >
-      <Flex gap={10}>
-        <Image src="/space_doodles_logo_new.png" w="20%" h="65%" alt="" />
-        <Flex direction="column" gap={6}>
+      <Flex gap={4} h="10rem" w="60%">
+        <Image src="/doodle_plane.gif" w="60%" h="80%" alt="" />
+        <Image src="/space_doodles_logo_new.png" w="60%" h="80%" alt="" />
+      </Flex>
+      <Flex direction="column" alignItems="center" gap={6}>
           <Box
-            fontSize={["xl", "xl", "xl", "2xl"]}
+            fontSize={["2xl"]}
             textShadow="1px 2px 0px #80b1ff"
           >
             Space Doodles is the first, small step towards discovering the
             Doodle universe with dozens of spacecraft designed by Burnt Toast.
           </Box>
-          <Box fontSize="lg">
+          <Box fontSize="xl">
             All Original Doodles receive a free ship and can launch it into
             space where it will sync with its pilot and establish attributes
             like “bladder management”, “piloting ability”, and more.
@@ -42,6 +45,7 @@ function SpaceDoodlesTab() {
               <Button
                 borderColor="#a4a4f4"
                 px={8}
+                bg="white"
                 borderBottomWidth="2px"
                 color="#6b6b9f"
                 borderRadius="lg"
@@ -54,8 +58,6 @@ function SpaceDoodlesTab() {
             </Link>
           </Box>
         </Flex>
-      </Flex>
-      <Image src="/doodle_plane.gif" w="25%" alt="" />
     </Flex>
   );
 }

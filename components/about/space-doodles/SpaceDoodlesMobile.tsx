@@ -4,7 +4,7 @@ import Link from "next/link";
 function SpaceDoodlesMobile() {
   return (
     <Flex
-      display={["flex", "flex", "flex", "none", "none"]}
+      display={["flex", "flex", "none", "none", "none"]}
       direction="column"
       w="full"
       alignItems="start"

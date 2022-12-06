@@ -1,5 +1,6 @@
 import { Box, Flex } from "@chakra-ui/react";
 import SpaceDoodlesMobile from "./SpaceDoodlesMobile";
+import SpaceDoodlesTab from "./SpaceDoodlesTab";
 import SpaceDoodlesWeb from "./SpaceDoodlesWeb";
 
 function SpaceDoodles() {
@@ -19,6 +20,7 @@ function SpaceDoodles() {
         >
             <SpaceDoodlesWeb />
             <SpaceDoodlesMobile />
+            <SpaceDoodlesTab />
         </Flex>
       </Flex>
     </Box>
