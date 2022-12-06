@@ -3,6 +3,7 @@ import AboutCards from "../components/about/AboutCards";
 import { aboutCardsData } from "../components/about/AboutCardsData";
 import AboutDescription from "../components/about/AboutDescription";
 import AboutHeader from "../components/about/AboutHeader";
+import CloudMarquee from "../components/about/CloudMarquee";
 import SpaceDoodles from "../components/about/space-doodles/SpaceDoodles";
 
 function About() {
@@ -79,6 +80,7 @@ function About() {
           </Flex>
         </Center>
       </Box>
+      <CloudMarquee />
     </Flex>
   );
 }
