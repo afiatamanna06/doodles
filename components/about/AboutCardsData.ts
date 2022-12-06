@@ -9,7 +9,8 @@ export const aboutCardsData = [
         titleImgW: ["75%", "75%", "40%", "40%"],
         titleImgH: [""],
         imageW: ["65%", "65%", "25%", "30%"],
-        imageH: [""]
+        imageH: [""],
+        target: false,
     },
     {
         path: "https://forum.doodles.app/",
@@ -21,6 +22,7 @@ export const aboutCardsData = [
         titleImgW: ["75%", "75%", "40%", "40%"],
         titleImgH: [""],
         imageW: ["70%", "70%", "30%", "35%"],
-        imageH: [""]
+        imageH: [""],
+        target: true,
     },
 ]

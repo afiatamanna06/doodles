@@ -58,6 +58,7 @@ function About() {
                 titleImgW,
                 imageH,
                 imageW,
+                target
               }) => (
                 <AboutCards
                   key={description}
@@ -71,6 +72,7 @@ function About() {
                   titleImgH={titleImgH}
                   imageH={imageH}
                   imageW={imageW}
+                  target={target}
                 />
               )
             )}
