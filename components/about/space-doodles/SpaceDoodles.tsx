@@ -1,4 +1,5 @@
 import { Box, Flex } from "@chakra-ui/react";
+import SpaceDoodlesWeb from "./SpaceDoodlesWeb";
 
 function SpaceDoodles() {
   return (
@@ -15,7 +16,7 @@ function SpaceDoodles() {
           p={[4, 4, 4, 4, 0]}
           alignItems={["center"]}
         >
-            
+            <SpaceDoodlesWeb />
         </Flex>
       </Flex>
     </Box>

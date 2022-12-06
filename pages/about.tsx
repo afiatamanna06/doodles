@@ -1,6 +1,7 @@
 import { Box, Center, Flex, Image } from "@chakra-ui/react";
 import AboutDescription from "../components/about/AboutDescription";
 import AboutHeader from "../components/about/AboutHeader";
+import SpaceDoodles from "../components/about/space-doodles/SpaceDoodles";
 
 function About() {
   return (
@@ -21,6 +22,7 @@ function About() {
           </Flex>
         </Center>
       </Box>
+      <SpaceDoodles />
     </Flex>
   );
 }
