@@ -73,7 +73,7 @@ export const navigationLinks = [
                 target: false,
             },
             {
-                path: "/",
+                path: "/events/nftnyc",
                 name: "NFT NYC 2022",
                 target: false,
             },
