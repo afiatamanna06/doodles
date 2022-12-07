@@ -26,7 +26,7 @@ import { navigationLinks } from "./NavigationLinks";
 function NavigationBar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <Box w="full" zIndex={99} px="4" py="2" borderBottom="1px" borderColor="blackAlpha.400">
+    <Box w="full" position="relative" zIndex={99} px="4" py="2" borderBottom="1px" borderColor="blackAlpha.400">
       <Center>
         <Flex maxW="74rem" w="full" justify="space-between" alignItems="center">
           <Flex alignItems="center">
