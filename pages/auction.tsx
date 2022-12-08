@@ -1,8 +1,11 @@
-
+import { Flex } from "@chakra-ui/react"
+import GenBoxHeading from "../components/genbox/GenBoxHeading"
 
 function Auction() {
   return (
-    <div>A</div>
+    <Flex direction="column" position="relative" w="full">
+        <GenBoxHeading />
+    </Flex>
   )
 }
 
