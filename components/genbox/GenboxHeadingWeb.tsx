@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Image } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, Link as ChakraLink } from "@chakra-ui/react";
 import Link from "next/link";
 
 function GenboxHeadingWeb() {
@@ -38,9 +38,18 @@ function GenboxHeadingWeb() {
             only available to claim in a 24 hour auction on June 29, 2022.
           </Box>
           <Box fontSize="md" fontWeight="medium">
-            What&apos;s inside? Well, all we can say for now is that it&apos;s
-            one functional piece of Doodle machinery containing nebulous Doodley
-            matter.
+            Learn how the auction works by reading the&nbsp;
+            <ChakraLink textDecoration="underline">
+              <Link href="#FAQ">FAQ</Link>
+            </ChakraLink>
+            &nbsp;and&nbsp;
+            <ChakraLink textDecoration="underline">
+              <Link href="https://docs.doodles.app/terms-of-service-bucket-auction">Bucket Auction Terms of Service</Link>
+            </ChakraLink>
+            . View the&nbsp;
+            <ChakraLink textDecoration="underline">
+              <Link href="#results">acution results.</Link>
+            </ChakraLink>
           </Box>
           <Box>
             <Link
@@ -49,11 +58,10 @@ function GenboxHeadingWeb() {
               passHref
             >
               <Button
-                border="2px"
-                borderColor="#6681c5"
+                borderColor="#a4a4f4"
                 px={8}
-                borderBottomWidth="4px"
-                color="#6681c5"
+                borderBottomWidth="2px"
+                color="#8a7dea"
                 py={6}
                 borderRadius="xl"
                 _hover={{ opacity: ".85" }}
