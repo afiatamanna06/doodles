@@ -53,7 +53,7 @@ export const navigationLinks = [
         title: "Doodles2",
         links: [
             {
-                path: "/",
+                path: "/auction",
                 name: "Genesis Box",
                 target: false,
             },
