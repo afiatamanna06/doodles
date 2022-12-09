@@ -39,4 +39,44 @@ export const auctionData = [
         title: "How do I win the auction?",
         data: "To win the auction, your total bid, which includes the sum of any increased bids, must be higher than the clearing price. If your total bid is 2 and the clearing price is 0.75, you will receive two NFTs and a 0.5 ETH refund for the remainder.",
     },
+    {
+        title: "What happens if I win the auction?",
+        data: "If you win the auction, you will receive the NFT(s) in your wallet shortly after the auction ends. After the clearing price is established, you will receive any excess ETH after the transaction completes.",
+    },
+    {
+        title: "What happens if I lose?",
+        data: "All of the ETH in your unsuccessful bid will be refunded.",
+    },
+    {
+        title: "How do refunds work?",
+        data: "Refunds will be automatically transferred shortly after the auction completes. This applies to successful bids (who will also get their NFTs delivered) and losing bids.",
+    },
+    {
+        title: "When is the auction?",
+        data: "June 29, from 7pm ET to June 30, 7pm ET. The auction will run for 24 hours and end at 7pm ET on June 30th.",
+    },
+    {
+        title: "How do I bid?",
+        data: "Before submitting a bid, You will need a wallet that has ethereum in it. All bids can be submitted at doodles.app/auction",
+    },
+    {
+        title: "How much ETH do I need to put in?",
+        data: "We recommend you put in an amount that is more than the clearing price and return back to the auction website in the final hour to make a bid increase as needed should the clearing price go beyond your initial bid. You are allowed to make multiple bids and each subsequent bid will build on the last one additively.",
+    },
+    {
+        title: "Can I cancel my bid?",
+        data: "It's not possible to cancel a bid in our smart contract. However, refunds for leftover eth and unsuccessful bids will be sent back to the wallet that submitted the bids at the end of the auction.",
+    },
+    {
+        title: "How do I request a refund?",
+        data: "All sales are final. Partial refunds for all successful bids and full refunds for unsuccessful bids will happen shortly after the auction concludes.",
+    },
+    {
+        title: "What is the bid leaderboard?",
+        data: "It's simply a list of people who have made the largest bids at any given time and a cumulative number of winning and losing bids.",
+    },
+    {
+        title: "What am I bidding on?",
+        data: "Each box contains a random assortment of apparel and accessories that can be applied to your Doodles 2 base character. Genesis Boxes will be unboxed by users at a later date. Wearables are hats, clothing, accessory NFTs that are interchangeable with your Doodles 2 character. Wearables are tradable NFTs.",
+    },
 ]
