@@ -9,7 +9,7 @@ function NewsStandSection() {
       <Center>
         <Flex maxW="74rem" gap={5} direction={["column"]} color="white" w="full" alignItems={["center"]}>
             <Image src="/the-news-stand.png" w={["80%", "80%", "40%", "30%", "25%"]} h={["80%", "80%", "40%", "30%", "25%"]} alt="" />
-            <Grid gap={4} mt="3" templateColumns={["repeat(1, minmax(18rem, 1fr))", "repeat(1, minmax(18rem, 1fr))", "repeat(2, minmax(18rem, 1fr))", "repeat(3, minmax(18rem, 1fr))", "repeat(4, minmax(18rem, 1fr))"]}>
+            <Grid gap={4} mt="3" templateColumns={["repeat(1, 1fr)", "repeat(1, 1fr)", "repeat(2, minmax(18rem, 1fr))", "repeat(3, minmax(18rem, 1fr))", "repeat(4, minmax(18rem, 1fr))"]}>
                 {newsStandData.map(({ path, image, title, date, source}) => (
                     <NewsStandCard key={title} path={path} image={image} date={date} title={title} source={source} />
                 ))}
