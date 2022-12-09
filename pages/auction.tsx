@@ -1,5 +1,6 @@
 import { Box, Flex, Link as ChakraLink } from "@chakra-ui/react";
 import Link from "next/link";
+import AuctionSection from "../components/genbox/auction-faq/AuctionSection";
 import GenBoxHeading from "../components/genbox/GenBoxHeading";
 
 function Auction() {
@@ -38,6 +39,7 @@ function Auction() {
           </ChakraLink>
         </Box>
       </Flex>
+      <AuctionSection />
     </Flex>
   );
 }
