@@ -79,4 +79,20 @@ export const auctionData = [
         title: "What am I bidding on?",
         data: "Each box contains a random assortment of apparel and accessories that can be applied to your Doodles 2 base character. Genesis Boxes will be unboxed by users at a later date. Wearables are hats, clothing, accessory NFTs that are interchangeable with your Doodles 2 character. Wearables are tradable NFTs.",
     },
+    {
+        title: "Why should I purchase a Genesis Box at the Genesis Factory?",
+        data: "To incentivize IRL event attendance, we’ve reserved up to 4,000 Genesis Boxes to be purchase-able in-person at the starting price of the bucket sale. This means that you will not have to compete with other bidders to be guaranteed a Genesis Box and you will also receive a significant discount.",
+    },
+    {
+        title: "What does this mean for my OG Doodle?",
+        data: "Your OG Doodle is able to bring its traits into Doodles 2 for use on new Doodles 2 base characters through utilizing the Dooplicator. Dooplicated wearables are the most OG tier of wearables in Doodles 2.",
+    },
+    {
+        title: "What if I change my mind?",
+        data: "All sales are final.",
+    },
+    {
+        title: "How is the final price determined?",
+        data: "When the bucket auction ends, we will have a bunch of addresses and their bids. The auction algorithm determines a final price such that 20,000 tokens (total supply of 24,000 less 4,000 reserved for live minting experience) are sold for the highest price given the distribution of bids. The price algorithm uses binary search, which roughly works like a “guess the number” game. The system starts from the halfway point, and figures out whether the guess is too low or too high. It keeps dividing in half until the guess is the right number. Put another way: we pick a starting price and calculate how many tokens we've sold at that given price. if the tokens sold is over 20,000, we raise the price. If it's under 20,000, we lower the price. This is repeated until we get exactly 20,000 tokens sold (or if not, as close to 20K as we can get without going over).",
+    },
 ]
