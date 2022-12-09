@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { auctionData } from "./auctionData";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
+import BucketAuctionSection from "./BucketAuctionSection";
 
 function AuctionSection() {
   return (
@@ -31,7 +32,7 @@ function AuctionSection() {
             w={["95%", "95%", "55%", "35%"]}
             alt=""
           />
-          <Accordion defaultIndex={[0]} allowMultiple width="full" pb={["24", "24", "24", "28"]}>
+          <Accordion defaultIndex={[0]} allowMultiple width="full" pb={["24"]}>
             {auctionData.map(({ title, data }) => (
               <AccordionItem
                 key={title}
@@ -84,6 +85,7 @@ function AuctionSection() {
                 _hover={{ bg: "#99E2FF", boxShadow: "dark-lg" }}
               ></Button>
             </Flex>
+            <BucketAuctionSection />
           </Flex>
         </Flex>
       </Flex>
