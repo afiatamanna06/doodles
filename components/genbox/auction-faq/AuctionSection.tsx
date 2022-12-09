@@ -62,14 +62,14 @@ function AuctionSection() {
             <Flex
               direction="column"
               p="3"
-              w="full"
+              w={["full", "full", "full", "40%"]}
               position="relative"
               color="white"
               bg="rgb(154 199 250)"
               borderRadius="xl"
               alignItems="center"
             >
-              <Image src="/auction-box-header.png" w={["60%", "60%", "50%", "40%"]} position="absolute" top={[-8, -8, -12, -14]} left={["20%", "20%", "25%", "30%"]} zIndex={1} alt="" />
+              <Image src="/auction-box-header.png" w={["60%", "60%", "50%", "90%"]} position="absolute" top={[-8, -8, -12, -12]} left={["20%", "20%", "25%", "5%"]} zIndex={1} alt="" />
               <Box fontSize="xl">the auction has ended</Box>
               <Box fontSize="sm" mb="4">no new bids will be accepted</Box>
               <Button
