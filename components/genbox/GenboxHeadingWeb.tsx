@@ -29,8 +29,8 @@ function GenboxHeadingWeb() {
             direction={["column", "column", "column", "row", "row"]}
             alignItems={["center", "center", "start", "start", "start"]}
           >
-            <Box>TOTAL SUPPLY: 24,000</Box>
-            <Box>PRICE: Mkt</Box>
+            <Box><b>TOTAL SUPPLY:</b> 24,000</Box>
+            <Box><b>PRICE:</b> Mkt</Box>
           </Flex>
           <Box fontSize="md" fontWeight="medium">
             Genesis Boxes contain rare wearables for Doodles 2. It is the first
@@ -39,11 +39,11 @@ function GenboxHeadingWeb() {
           </Box>
           <Box fontSize="md" fontWeight="medium">
             Learn how the auction works by reading the&nbsp;
-            <ChakraLink textDecoration="underline">
+            <ChakraLink textDecoration="underline" fontWeight="semibold">
               <Link href="#FAQ">FAQ</Link>
             </ChakraLink>
             &nbsp;and&nbsp;
-            <ChakraLink textDecoration="underline">
+            <ChakraLink textDecoration="underline" fontWeight="semibold">
               <Link href="https://docs.doodles.app/terms-of-service-bucket-auction">Bucket Auction Terms of Service</Link>
             </ChakraLink>
             . View the&nbsp;

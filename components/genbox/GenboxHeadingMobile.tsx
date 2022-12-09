@@ -41,8 +41,8 @@ function GenboxHeadingMobile() {
             direction={["column", "row"]}
             alignItems={["center", "center"]}
           >
-            <Box>TOTAL SUPPLY: 24,000</Box>
-            <Box>PRICE: Mkt</Box>
+            <Box><b>TOTAL SUPPLY:</b> 24,000</Box>
+            <Box><b>PRICE:</b> Mkt</Box>
           </Flex>
         </Flex>
         <Flex w="full" justify="center">
