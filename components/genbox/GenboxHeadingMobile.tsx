@@ -28,7 +28,7 @@ function GenboxHeadingMobile() {
         direction="column"
         alignItems="center"
         justify="space-between"
-        minH={["80vh", "80vh", "65vh"]}
+        minH={["93vh", "80vh", "65vh"]}
         py="12"
         zIndex={1}
       >
