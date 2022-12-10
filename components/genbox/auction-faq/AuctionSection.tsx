@@ -59,6 +59,7 @@ function AuctionSection() {
             direction={["column", "column", "column", "row"]}
             alignItems={["start"]}
             w="full"
+            mb="20"
           >
             <Flex
               direction="column"

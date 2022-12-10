@@ -51,6 +51,35 @@ function BucketAuctionSection() {
           <Box w="15%" overflow="hidden">{refund}</Box>
         </Flex>
       ))}
+      <Flex direction="column" w="full" h="100%" position="relative" gap={1}>
+        <Flex
+          bg="rgb(154 199 250)"
+          w="full"
+          py="1"
+          justify="center"
+          borderRadius="lg"
+          fontSize="sm"
+          color="white"
+        >
+          + 4346 more bids winning
+        </Flex>
+        <Box bg="rgb(140 125 234)" w="full" rounded="full" h=".2rem"></Box>
+        <Flex direction="column" display={["none", "flex", "flex", "flex", "flex"]} fontSize="xs" fontWeight="bold" top="13%" left="3%" color="white" borderRadius="xl" p="2" position="absolute" bg="rgb(140 125 234)">
+          <Box>Current Price:</Box>
+          <Box>0.508 ETH</Box>
+        </Flex>
+        <Flex
+          bg="rgb(255 164 212)"
+          w="full"
+          py="1"
+          justify="center"
+          borderRadius="lg"
+          fontSize="sm"
+          color="white"
+        >
+          2172 not winning
+        </Flex>
+      </Flex>
     </Flex>
   );
 }
