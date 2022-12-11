@@ -50,7 +50,7 @@ export const footerLinks = [
         title: "Doodles2",
         links: [
             {
-                path: "/",
+                path: "/auction",
                 name: "Genesis Box",
                 target: false,
             },
@@ -70,7 +70,7 @@ export const footerLinks = [
                 target: false,
             },
             {
-                path: "/",
+                path: "/events/nftnyc",
                 name: "NFT NYC 2022",
                 target: false,
             },
