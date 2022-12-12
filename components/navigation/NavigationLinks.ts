@@ -68,7 +68,7 @@ export const navigationLinks = [
         title: "Events",
         links: [
             {
-                path: "/",
+                path: "/events/doodleputt",
                 name: "DoodlePutt",
                 target: false,
             },

@@ -65,7 +65,7 @@ export const footerLinks = [
         title: "Events",
         links: [
             {
-                path: "/",
+                path: "/events/doodleputt",
                 name: "DoodlePutt",
                 target: false,
             },
