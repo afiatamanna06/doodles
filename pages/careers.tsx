@@ -71,7 +71,7 @@ function Careers() {
                 There are currently 9 open positions
               </Box>
             </Flex>
-            <Flex direction="column" flex="1" gap={8}>
+            <Flex direction="column" flex="1" w="full" gap={8}>
               {careerData.map(({ title, links }) => (
                 <Flex direction="column" key={title} gap={4}>
                   <Box fontWeight="semibold">{title}</Box>
@@ -99,9 +99,12 @@ function Careers() {
                           <ChakraLink fontSize="lg" textDecoration="underline">
                             <Box color="rgb(80 134 220)">{name}</Box>
                           </ChakraLink>
-                          <ChakraLink color="" textDecoration="underline">
-                            <Box color="rgb(164 164 244)">{place}</Box>
-                          </ChakraLink>
+                          <Flex gap={2} alignItems="center">
+                            <Image src="/career-icon.svg" h="70%" alt="" />
+                            <ChakraLink textDecoration="underline">
+                              <Box color="rgb(164 164 244)">{place}</Box>
+                            </ChakraLink>
+                          </Flex>
                         </Flex>
                         <FiChevronRight color="rgb(80 134 220)" size={22} />
                       </Flex>
