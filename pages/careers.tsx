@@ -1,4 +1,7 @@
-import { Box, Flex, Image } from "@chakra-ui/react";
+import { Box, Flex, Image, Link as ChakraLink } from "@chakra-ui/react";
+import Link from "next/link";
+import { careerData } from "../components/careers/CareerData";
+import { FiChevronRight } from "react-icons/fi"
 
 function Careers() {
   return (
@@ -38,7 +41,9 @@ function Careers() {
             maxW="65rem"
             mt={["40", "40", "80", "40"]}
             pt={["16", "28", "40", "0"]}
+            pb="24"
             w="full"
+            gap={8}
             color="rgb(49 58 113)"
             px={[4, 4, 4, 4, 0]}
             alignItems={["start"]}
@@ -62,10 +67,40 @@ function Careers() {
                 seeking exceptional people to help us innovate, create and
                 develop extraordinary products, experiences and stories.
               </Box>
-              <Box fontWeight="semibold">There are currently 9 open positions</Box>
+              <Box fontWeight="semibold">
+                There are currently 9 open positions
+              </Box>
             </Flex>
             <Flex direction="column" flex="1" gap={8}>
-              <Box>Finance & Operations</Box>
+              {careerData.map(({ title, links }) => (
+                <Flex direction="column" key={title} gap={4}>
+                  <Box fontWeight="semibold">{title}</Box>
+                  {links.map(({ path, name, place }) => (
+                    <Link href={path} key={name} passHref>
+                      <Flex
+                        justify="space-between"
+                        alignItems="center"
+                        w="full"
+                        border="1px"
+                        borderColor="rgb(187 239 255)"
+                        p="3"
+                        borderRadius="xl"
+                        bgImage="url('/button_white-cloud.png')"
+                        bgSize={["cover"]}
+                        bgPosition="center"
+                        _hover={{ border: "2px", borderColor: "rgb(164 164 244)", borderBottomWidth: "4px" }}
+                        bgRepeat="no-repeat"
+                      >
+                        <Flex direction="column">
+                          <ChakraLink color="rgb(80 134 220)">{name}</ChakraLink>
+                          <ChakraLink color="rgb(164 164 244)">{place}</ChakraLink>
+                        </Flex>
+                        <FiChevronRight color="rgb(80 134 220)" />
+                      </Flex>
+                    </Link>
+                  ))}
+                </Flex>
+              ))}
             </Flex>
           </Flex>
         </Flex>
