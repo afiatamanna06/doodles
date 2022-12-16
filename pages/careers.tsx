@@ -1,7 +1,7 @@
 import { Box, Flex, Image, Link as ChakraLink } from "@chakra-ui/react";
 import Link from "next/link";
 import { careerData } from "../components/careers/CareerData";
-import { FiChevronRight } from "react-icons/fi"
+import { FiChevronRight } from "react-icons/fi";
 
 function Careers() {
   return (
@@ -76,7 +76,7 @@ function Careers() {
                 <Flex direction="column" key={title} gap={4}>
                   <Box fontWeight="semibold">{title}</Box>
                   {links.map(({ path, name, place }) => (
-                    <Link href={path} key={name} passHref>
+                    <Link href={path} key={name} target="_blank" passHref>
                       <Flex
                         justify="space-between"
                         alignItems="center"
@@ -88,14 +88,22 @@ function Careers() {
                         bgImage="url('/button_white-cloud.png')"
                         bgSize={["cover"]}
                         bgPosition="center"
-                        _hover={{ border: "2px", borderColor: "rgb(164 164 244)", borderBottomWidth: "4px" }}
+                        _hover={{
+                          border: "2px",
+                          borderColor: "rgb(164 164 244)",
+                          borderBottomWidth: "4px",
+                        }}
                         bgRepeat="no-repeat"
                       >
                         <Flex direction="column">
-                          <ChakraLink color="rgb(80 134 220)">{name}</ChakraLink>
-                          <ChakraLink color="rgb(164 164 244)">{place}</ChakraLink>
+                          <ChakraLink fontSize="lg" textDecoration="underline">
+                            <Box color="rgb(80 134 220)">{name}</Box>
+                          </ChakraLink>
+                          <ChakraLink color="" textDecoration="underline">
+                            <Box color="rgb(164 164 244)">{place}</Box>
+                          </ChakraLink>
                         </Flex>
-                        <FiChevronRight color="rgb(80 134 220)" />
+                        <FiChevronRight color="rgb(80 134 220)" size={22} />
                       </Flex>
                     </Link>
                   ))}
