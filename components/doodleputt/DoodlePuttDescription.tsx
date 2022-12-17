@@ -36,7 +36,7 @@ function DoodlePuttDescription() {
         display={["flex", "flex", "flex", "none", "none"]}
         alt=""
       />
-      <Box color="white" mt={[8, 8, 8, 8]} px={[4, 4, 4, 0]} fontSize={["2xl", "2xl", "2xl", "3xl"]} maxW="40rem" textAlign="center">Go on an adventure to the world of Doodles with a mini-golf experience like no other.</Box>
+      <Box color="white" mt={[8, 8, 8, 8]} textShadow="0px 1px 0px #4EAB7F" px={[4, 4, 4, 0]} fontSize={["2xl", "2xl", "2xl", "3xl"]} maxW="40rem" textAlign="center">Go on an adventure to the world of Doodles with a mini-golf experience like no other.</Box>
       <DoodlePuttDescriptionWeb />
     </Flex>
   );

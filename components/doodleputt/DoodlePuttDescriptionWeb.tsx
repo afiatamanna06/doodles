@@ -4,8 +4,8 @@ function DoodlePuttDescriptionWeb() {
   return (
     <Flex direction={["column", "column", "column", "row", "row"]} gap={4} maxW="65rem" mt="14" pb="6" color="white">
       <Flex direction="column" flex="1" alignItems={["center", "center", "center", "start"]}>
-        <Box fontSize="xl">Miami, Florida</Box>
-        <Flex fontSize={["2xl", "2xl", "2xl", "3xl"]} direction={["column", "column", "column", "row", "row"]} gap={4} alignItems="center">
+        <Box fontSize="xl" textShadow="0px 1px 0px #80B1FF">Miami, Florida</Box>
+        <Flex fontSize={["2xl", "2xl", "2xl", "3xl"]} textShadow="0px 1px 0px #80B1FF" direction={["column", "column", "column", "row", "row"]} gap={4} alignItems="center">
             <Box>December 2nd + 3rd</Box>
             <Box display={["none", "none", "none", "flex", "flex"]} bg="rgb(255, 231, 128)" w=".15rem" h="1.8rem"></Box>
             <Box display={["flex", "flex", "flex", "none", "none"]} bg="rgb(255, 231, 128)" w="13rem" h=".15rem"></Box>
