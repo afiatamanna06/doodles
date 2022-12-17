@@ -1,8 +1,11 @@
-
+import { Flex } from "@chakra-ui/react"
+import DoodlePuttDescription from "../../components/doodleputt/DoodlePuttDescription"
 
 function Doodleputt() {
   return (
-    <div>doodleputt</div>
+    <Flex direction="column">
+      <DoodlePuttDescription />
+    </Flex>
   )
 }
 
