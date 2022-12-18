@@ -1,5 +1,6 @@
 import { Box, Flex, Image } from "@chakra-ui/react";
 import DoodlePuttDescriptionWeb from "./DoodlePuttDescriptionWeb";
+import DoodlePuttFacilities from "./DoodlePuttFacilities";
 
 function DoodlePuttDescription() {
   return (
@@ -38,6 +39,7 @@ function DoodlePuttDescription() {
       />
       <Box color="white" mt={[8, 8, 8, 8]} textShadow="0px 1px 0px #4EAB7F" px={[4, 4, 4, 0]} fontSize={["2xl", "2xl", "2xl", "3xl"]} maxW="40rem" textAlign="center">Go on an adventure to the world of Doodles with a mini-golf experience like no other.</Box>
       <DoodlePuttDescriptionWeb />
+      <DoodlePuttFacilities />
     </Flex>
   );
 }
