@@ -2,6 +2,7 @@ import { Box, Center, Flex, Image, Link as ChakraLink } from "@chakra-ui/react";
 import Link from "next/link";
 import DoodlePuttFacilitiesCard from "./DoodlePuttFacilitiesCard";
 import { facilitiesData } from "./DoodlePuttFacilitiesData";
+import PuttResources from "./resources/PuttResources";
 
 function DoodlePuttFacilities() {
   return (
@@ -102,6 +103,7 @@ function DoodlePuttFacilities() {
             w="100%"
             alt=""
           />
+          <PuttResources />
         </Flex>
       </Center>
     </Box>
