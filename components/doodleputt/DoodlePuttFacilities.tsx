@@ -103,26 +103,59 @@ function DoodlePuttFacilities() {
             w="100%"
             alt=""
           />
-          <Flex direction={["column", "column", "row", "row", "row"]} pb="20" justify="space-between" alignItems={["center", "center", "start", "start"]} w="full" gap={[12, 12, 12, 20]}>
-            <Flex direction="column" gap={4} w={["full", "full", "100%", "100%"]}>
-              <Box px={[4, 4, 4, 0, 0]} fontSize="xl">Resources and FAQs</Box>
+          <Flex
+            direction={["column", "column", "row", "row", "row"]}
+            pb="20"
+            justify="space-between"
+            alignItems={["center", "center", "start", "start"]}
+            w="full"
+            gap={[12, 12, 12, 20]}
+          >
+            <Flex
+              direction="column"
+              gap={4}
+              w={["full", "full", "100%", "100%"]}
+            >
+              <Box px={[4, 4, 4, 0, 0]} fontSize="xl">
+                Resources and FAQs
+              </Box>
               <PuttResources />
             </Flex>
-            <Flex direction="column" w={["full", "full", "30rem", "30rem"]} gap={4} px={[4, 4, 4, 0, 0]}>
+            <Flex
+              direction="column"
+              w={["full", "full", "30rem", "30rem"]}
+              gap={4}
+              px={[4, 4, 4, 0, 0]}
+            >
               <Box fontSize="xl">Contact</Box>
               <Flex alignItems="stretch" gap={2}>
                 <Image src="/career-icon_putt.svg" pt="1" h="70%" alt="" />
                 <Box>2534 N Miami Ave Miami, FL</Box>
               </Flex>
               <Box>
-                <iframe width="100%" height="240px" loading="lazy" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD6fqTo0BJkVCas0FERBexZ_GeHP9-5Gfw &amp;q=2534+N+Miami+Ave,+Miami,+FL"></iframe>
+                <iframe
+                  width="100%"
+                  height="240px"
+                  loading="lazy"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD6fqTo0BJkVCas0FERBexZ_GeHP9-5Gfw &amp;q=2534+N+Miami+Ave,+Miami,+FL"
+                ></iframe>
               </Box>
               <Box fontWeight="semibold">event support</Box>
-              <Box>rsvp@doodles.app</Box>
+              <Link href="mailto:rsvp@doodles.app" passHref>
+                <Box>rsvp@doodles.app</Box>
+              </Link>
               <Box fontWeight="semibold">tokenproof support</Box>
-              <Box>support@tokenproof.xyz</Box>
+              <Link href="mailto:support@tokenproof.xyz" passHref>
+                <Box>support@tokenproof.xyz</Box>
+              </Link>
             </Flex>
-            <Flex direction="column" maxW={["14rem", "14rem", "13rem", "13rem"]} px={[4, 4, 4, 0, 0]} alignItems="center" gap={6}>
+            <Flex
+              direction="column"
+              maxW={["14rem", "14rem", "13rem", "13rem"]}
+              px={[4, 4, 4, 0, 0]}
+              alignItems="center"
+              gap={6}
+            >
               <Box fontSize="xl">DoodlePutt Sponsors</Box>
               <Image src="/putt_opensea.png" alt="" />
               <Image src="/johnnie_walker.png" alt="" />
