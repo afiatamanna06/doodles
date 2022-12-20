@@ -103,7 +103,26 @@ function DoodlePuttFacilities() {
             w="100%"
             alt=""
           />
-          <PuttResources />
+          <Flex direction={["column", "column", "row", "row", "row"]} pb="20" justify="space-between" alignItems={["center", "center", "start", "start"]} w="full" gap={[12, 12, 12, 20]}>
+            <Flex direction="column" gap={4} w={["full", "full", "100%", "100%"]}>
+              <Box px={[4, 4, 4, 0, 0]} fontSize="xl">Resources and FAQs</Box>
+              <PuttResources />
+            </Flex>
+            <Flex direction="column" w={["full", "full", "min-content", "min-content"]} gap={4} px={[4, 4, 4, 0, 0]}>
+              <Box fontSize="xl">Contact</Box>
+              <Box fontWeight="semibold">event support</Box>
+              <Box>rsvp@doodles.app</Box>
+              <Box fontWeight="semibold">tokenproof support</Box>
+              <Box>support@tokenproof.xyz</Box>
+            </Flex>
+            <Flex direction="column" maxW={["14rem", "14rem", "13rem", "13rem"]} px={[4, 4, 4, 0, 0]} alignItems="center" gap={6}>
+              <Box fontSize="xl">DoodlePutt Sponsors</Box>
+              <Image src="/putt_opensea.png" alt="" />
+              <Image src="/johnnie_walker.png" alt="" />
+              <Image src="/tokenproof.png" alt="" />
+              <Image src="/littlebrewing.png" alt="" />
+            </Flex>
+          </Flex>
         </Flex>
       </Center>
     </Box>

@@ -13,11 +13,10 @@ function PuttResources() {
   return (
     <Flex
       direction="column"
-      pt={["14", "28", "28"]}
-      px={[4, 4, 4, 4, 0]}
+      px={[4, 4, 4, 0, 0]}
       alignItems={["start"]}
     >
-      <Accordion defaultIndex={[0]} allowMultiple width="full" pb={["24"]}>
+      <Accordion defaultIndex={[0]} allowMultiple width="full">
         {resourcesData.map(({ title, data }) => (
           <AccordionItem
             key={title}
@@ -26,7 +25,7 @@ function PuttResources() {
           >
             <h2>
               <AccordionButton>
-                <Box flex="1" textAlign="left" fontWeight="semibold">
+                <Box flex="1" textAlign="left">
                   {title}
                 </Box>
                 <AccordionIcon />
