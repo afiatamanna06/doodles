@@ -49,6 +49,7 @@ function DoodlePuttFacilities() {
                   </Link>
                 </Flex>
             </Flex>
+            <Image display={["none", "none", "flex", "flex", "flex"]} src="/putt_rainbow_bar.png" w="100%" alt="" />
         </Flex>
       </Center>
     </Box>
