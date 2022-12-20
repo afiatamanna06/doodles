@@ -1,4 +1,4 @@
-import { Box, Center, Flex, Image } from "@chakra-ui/react";
+import { Box, Center, Flex, Image, Link as ChakraLink } from "@chakra-ui/react";
 import Link from "next/link";
 import DoodlePuttFacilitiesCard from "./DoodlePuttFacilitiesCard";
 import { facilitiesData } from "./DoodlePuttFacilitiesData";
@@ -57,9 +57,32 @@ function DoodlePuttFacilities() {
               </Box>
               <Box textAlign={["center", "center", "start", "start"]}>
                 JuicyKatBae is comprised of three OG Doodle holders who met on
-                the Blockchain: Julia, Kat Sammy. Despite their geographical
-                distance apart, the trio is united through their love of the
-                Doodles community and fascination with all things Web3.
+                the Blockchain:{" "}
+                <Link
+                  href="https://twitter.com/juicyju33"
+                  target="_blank"
+                  passHref
+                >
+                  <ChakraLink color="#5086dc">Julia</ChakraLink>
+                </Link>
+                ,{" "}
+                <Link
+                  href="https://twitter.com/it_me_kat"
+                  target="_blank"
+                  passHref
+                >
+                  <ChakraLink color="#5086dc">Kat</ChakraLink>
+                </Link>{" "}
+                <Link
+                  href="https://twitter.com/bae_xyz"
+                  target="_blank"
+                  passHref
+                >
+                  <ChakraLink color="#5086dc">Sammy</ChakraLink>
+                </Link>
+                . Despite their geographical distance apart, the trio is united
+                through their love of the Doodles community and fascination with
+                all things Web3.
               </Box>
               <br />
               <Box textAlign={["center", "center", "start", "start"]}>
