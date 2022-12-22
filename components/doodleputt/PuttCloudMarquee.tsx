@@ -9,9 +9,9 @@ function PuttCloudMarquee() {
       play={true}
       gradientWidth={0}
     >
-      <Image src="/cloud1.png" w="100%" h="14rem" alt="" />
-      <Image src="/cloud1.png" w="100%" h="14rem" alt="" />
-      <Image src="/cloud1.png" w="100%" h="14rem" alt="" />
+      <Image src="/cloud1.png" w="10%" h="5rem" alt="" />
+      <Image src="/cloud1.png" w="10%" h="5rem" alt="" />
+      <Image src="/cloud1.png" w="10%" h="5rem" alt="" />
     </Marquee>
   )
 }

@@ -2,7 +2,7 @@ import { Box, Flex, Image } from "@chakra-ui/react";
 
 function DoodlePuttDescriptionWeb() {
   return (
-    <Flex direction={["column", "column", "column", "row", "row"]} gap={4} maxW="65rem" mt="14" pb="6" color="white">
+    <Flex direction={["column", "column", "column", "row", "row"]} gap={4} maxW="65rem" pt="14" pb="6" color="white">
       <Flex direction="column" flex="1" alignItems={["center", "center", "center", "start"]}>
         <Box fontSize="xl" textShadow="0px 1px 0px #80B1FF">Miami, Florida</Box>
         <Flex fontSize={["2xl", "2xl", "2xl", "3xl"]} textShadow="0px 1px 0px #80B1FF" direction={["column", "column", "column", "row", "row"]} gap={4} alignItems="center">
