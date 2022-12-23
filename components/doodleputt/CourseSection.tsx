@@ -10,6 +10,8 @@ function CourseSection() {
           gap={[3]}
           direction={["column"]}
           w="full"
+          py={[8, 8, 12, 0]}
+          px={[4, 4, 6, 0]}
           alignItems={["center", "center", "center", "start"]}
         >
           <Box fontSize={["3xl"]} textShadow="0px 2px 0px #68c89a">The Course</Box>
