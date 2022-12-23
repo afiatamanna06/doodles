@@ -1,4 +1,4 @@
-import { Box, Center, Flex, Grid } from "@chakra-ui/react";
+import { Box, Center, Flex, Grid, Image } from "@chakra-ui/react";
 import CourseCard from "./CourseCard";
 import { courseCardData } from "./CourseCardData";
 
@@ -9,10 +9,12 @@ function CourseSection() {
         <Flex
           maxW="70rem"
           color="white"
+          zIndex={2}
           gap={[3]}
+          pb={[8, 8, 12, 80]}
           direction={["column"]}
           w="full"
-          py={[8, 8, 12, 0]}
+          pt={[8, 8, 12, 0]}
           px={[4, 4, 6, 0]}
           alignItems={["start"]}
         >
@@ -25,6 +27,8 @@ function CourseSection() {
           </Grid>
         </Flex>
       </Center>
+      <Image src="/greens.png" display={["none", "none", "none", "flex", "flex"]} position="absolute" top="35%" alt="" />
+      <Image src="/greens.png" display={["none", "none", "none", "flex", "flex"]} position="absolute" zIndex={1} mt="20%" alt="" />
     </Flex>
   );
 }
