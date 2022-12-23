@@ -12,6 +12,7 @@ function DoodlePuttDescription() {
       alignItems="center"
       bg="rgb(121, 232, 179)"
       w="full"
+      zIndex={2}
     >
       <Image
         src="/doodleputt_cover.png"
@@ -62,7 +63,7 @@ function DoodlePuttDescription() {
           <Box w="full" position="absolute" top="12">
             <PuttCloudMarquee />
           </Box>
-          <Image src="/putt_bushes.png" mt="-16" zIndex={2} w={["full"]} alt="" />
+          <Image src="/putt_bushes.png" mt={["12", "12", "12", "-16"]} zIndex={2} w={["full"]} alt="" />
         </Flex>
         <CourseSection />
       </Box>
