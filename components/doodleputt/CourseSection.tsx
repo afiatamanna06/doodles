@@ -29,6 +29,12 @@ function CourseSection() {
       </Center>
       <Image src="/greens.png" display={["none", "none", "none", "flex", "flex"]} position="absolute" top="35%" alt="" />
       <Image src="/greens.png" display={["none", "none", "none", "flex", "flex"]} position="absolute" zIndex={1} mt="20%" alt="" />
+      <Image src="/foliage_1.png" display={["none", "none", "none", "flex", "flex"]} position="absolute" zIndex={1} w="7%" left="5%" top="60%" alt="" />
+      <Flex display={["none", "none", "none", "flex", "flex"]} alignItems="end" gap={1} position="absolute" zIndex={1} left="16%" top="100%">
+        <Image src="/flower.png" w="7%" h="10%" alt="" />
+        <Image src="/flower.png" w="10%" h="13%" alt="" />
+      </Flex>
+      <Image src="/foliage_2.png" display={["none", "none", "none", "flex", "flex"]} position="absolute" zIndex={1} w="4%" h="4%" left="75%" top="99%" alt="" />
     </Flex>
   );
 }
