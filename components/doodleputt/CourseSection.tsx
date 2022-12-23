@@ -1,6 +1,7 @@
 import { Box, Center, Flex, Grid, Image } from "@chakra-ui/react";
 import CourseCard from "./CourseCard";
 import { courseCardData } from "./CourseCardData";
+import CourseChallengeSectionWeb from "./CourseChallengeSectionWeb";
 
 function CourseSection() {
   return (
@@ -11,7 +12,7 @@ function CourseSection() {
           color="white"
           zIndex={2}
           gap={[3]}
-          pb={[8, 8, 12, 80]}
+          pb={[8, 8, 12, 48]}
           direction={["column"]}
           w="full"
           pt={[8, 8, 12, 0]}
@@ -25,11 +26,12 @@ function CourseSection() {
               <CourseCard key={title} title={title} image={image} id={idx+1} />
             ))}
           </Grid>
+          <CourseChallengeSectionWeb />
         </Flex>
       </Center>
-      <Image src="/greens.png" display={["none", "none", "none", "flex", "flex"]} position="absolute" top="35%" alt="" />
-      <Image src="/greens.png" display={["none", "none", "none", "flex", "flex"]} position="absolute" zIndex={1} mt="20%" alt="" />
-      <Image src="/foliage_1.png" display={["none", "none", "none", "flex", "flex"]} position="absolute" zIndex={1} w="7%" left="5%" top="60%" alt="" />
+      <Image src="/greens.png" display={["none", "none", "none", "flex", "flex"]} position="absolute" top={["40%", "30%"]} alt="" />
+      <Image src="/greens.png" display={["none", "none", "none", "flex", "flex"]} position="absolute" zIndex={1} mt="30%" alt="" />
+      <Image src="/foliage_1.png" display={["none", "none", "none", "flex", "flex"]} position="absolute" zIndex={1} w="7%" left="3%" top="60%" alt="" />
       <Flex display={["none", "none", "none", "flex", "flex"]} alignItems="end" gap={1} position="absolute" zIndex={1} left="16%" top="100%">
         <Image src="/flower.png" w="7%" h="10%" alt="" />
         <Image src="/flower.png" w="10%" h="13%" alt="" />
