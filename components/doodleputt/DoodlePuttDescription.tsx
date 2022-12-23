@@ -1,4 +1,5 @@
 import { Box, Flex, Image } from "@chakra-ui/react";
+import CourseChallengeSectionMobile from "./CourseChallengeSectionMobile";
 import CourseSection from "./CourseSection";
 import DoodlePuttDescriptionWeb from "./DoodlePuttDescriptionWeb";
 import DoodlePuttFacilities from "./DoodlePuttFacilities";
@@ -10,7 +11,7 @@ function DoodlePuttDescription() {
       direction="column"
       position="relative"
       alignItems="center"
-      bg="rgb(121, 232, 179)"
+      bg={["#b3ffc7", "#b3ffc7", "#b3ffc7", "rgb(121, 232, 179)"]}
       w="full"
       zIndex={2}
     >
@@ -66,6 +67,7 @@ function DoodlePuttDescription() {
           <Image src="/putt_bushes.png" mt={["12", "12", "12", "-16"]} zIndex={2} w={["full"]} alt="" />
         </Flex>
         <CourseSection />
+        <CourseChallengeSectionMobile />
       </Box>
       <DoodlePuttFacilities />
     </Flex>
