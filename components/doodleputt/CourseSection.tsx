@@ -18,7 +18,7 @@ function CourseSection() {
         >
           <Box fontSize={["3xl"]} textShadow="0px 2px 0px #68c89a">The Course</Box>
           <Box fontSize={["xl"]} maxW="40rem">Travel through 9 mini-golf holes, each representing a different part of the Doodles universe, on a course filled with new worlds to explore, characters to meet, and secrets to unlock.</Box>
-          <Grid pt={[4, 4, 4, 4]} w="full" templateColumns={["repeat(3, 1fr)", "repeat(3, 1fr)", "repeat(5, 1fr)", "repeat(9, 1fr)"]} gap={[3, 3, 3, 3]}>
+          <Grid pt={[4, 4, 4, 4]} w="full" templateColumns={["repeat(3, 1fr)", "repeat(3, 1fr)", "repeat(5, 1fr)", "repeat(9, 1fr)"]} gap={[3, 3, 3, 4]}>
             {courseCardData.map(({image, title}, idx) => (
               <CourseCard key={title} title={title} image={image} id={idx+1} />
             ))}
