@@ -6,6 +6,8 @@ function CourseChallengeSectionWeb() {
     <Flex
       color="white"
       w="100%"
+      overflow="hidden"
+      position="relative"
       gap={20}
       mt={["10", "10", "10", "20"]}
       display={["none", "none", "none", "flex", "flex"]}
@@ -19,17 +21,21 @@ function CourseChallengeSectionWeb() {
         <Image src="/stars_sparkle.png" mb="-8" alt="" />
         <Image src="/wormhole.png" alt="" />
       </Flex>
-      <Flex position="absolute" gap={2} direction="column" left="65%" alignItems="center" w="15%">
+      <Flex
+        position="absolute"
+        gap={2}
+        direction="column"
+        left="65%"
+        alignItems="center"
+        w="15%"
+      >
         <Image src="/star.png" w="21%" alt="" />
         <Image src="/star_shadow.png" w="20%" h="5%" alt="" />
       </Flex>
       <Flex direction="column" zIndex={2} pt="10">
         <Parallax
           speed={2}
-          rotate={[
-            '10deg',
-            '0deg'
-          ]}
+          rotate={["10deg", "0deg"]}
           translateX={["50%", "-50%"]}
           translateY={["35%", "35%"]}
         >

@@ -13,7 +13,7 @@ function DoodlePuttFacilities() {
       position="relative"
       bgRepeat="no-repeat"
       px={["4", "4", "16", "0"]}
-      py="6"
+      py={["20", "20", "20", "6"]}
     >
       <Center>
         <Flex
