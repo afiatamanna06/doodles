@@ -16,20 +16,33 @@ function CourseChallengeSectionWeb() {
         <Box>*Subject to availability</Box>
       </Flex>
       <Flex direction="column" alignItems="center" w="15%">
-        <Image src="/stars_sparkle.png" mb="-8" zIndex={2} alt="" />
+        <Image src="/stars_sparkle.png" mb="-8" alt="" />
         <Image src="/wormhole.png" alt="" />
       </Flex>
-      <Parallax
-        speed={14}
-        rotate={[
-          '70deg',
-          '0deg'
-        ]}
-        translateX={["50%", "-50%"]}
-        translateY={["38%", "38%"]}
-      >
-        <Image src="/golf_ball.png" w="50%" alt="" />
-      </Parallax>
+      <Flex position="absolute" gap={2} direction="column" left="65%" alignItems="center" w="15%">
+        <Image src="/star.png" w="21%" alt="" />
+        <Image src="/star_shadow.png" w="20%" h="5%" alt="" />
+      </Flex>
+      <Flex direction="column" zIndex={2} pt="10">
+        <Parallax
+          speed={2}
+          rotate={[
+            '10deg',
+            '0deg'
+          ]}
+          translateX={["50%", "-50%"]}
+          translateY={["35%", "35%"]}
+        >
+          <Image src="/golf_ball.png" zIndex={2} pb="-8" w="20%" alt="" />
+        </Parallax>
+        <Parallax
+          speed={20}
+          translateX={["40%", "-25%"]}
+          translateY={["45%", "45%"]}
+        >
+          <Image src="/ball_shadow.png" zIndex={1} w="30%" alt="" />
+        </Parallax>
+      </Flex>
     </Flex>
   );
 }
