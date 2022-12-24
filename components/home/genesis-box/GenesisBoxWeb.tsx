@@ -46,7 +46,9 @@ function GenesisBoxWeb() {
               </Button>
             </Link>
             <Box textShadow="0px 2px #2e2731" fontWeight="medium" fontSize="lg">
-              learn more
+              <Link href="/auction" passHref>
+                learn more
+              </Link>
             </Box>
           </Flex>
         </Flex>

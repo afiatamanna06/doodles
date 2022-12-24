@@ -53,7 +53,9 @@ function GenesisBoxMobile() {
         </Link>
       </Box>
       <Box color="#313A71" textAlign="center" fontWeight="medium" fontSize="lg">
-        learn more
+        <Link href="/auction" passHref>
+          learn more
+        </Link>
       </Box>
     </Flex>
   );
