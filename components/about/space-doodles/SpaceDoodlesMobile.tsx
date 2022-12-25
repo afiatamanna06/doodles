@@ -20,7 +20,13 @@ function SpaceDoodlesMobile() {
       borderRadius="2xl"
       bgRepeat="no-repeat"
     >
-      <Flex gap={10} direction="column" alignItems="center" position="relative" zIndex={3}>
+      <Flex
+        gap={10}
+        direction="column"
+        alignItems="center"
+        position="relative"
+        zIndex={3}
+      >
         <Image src="/space_doodles_logo_new.png" w="60%" h="65%" alt="" />
         <Flex direction="column" gap={6} alignItems="center">
           <Box
@@ -56,8 +62,22 @@ function SpaceDoodlesMobile() {
           </Box>
         </Flex>
       </Flex>
-      <Image src="/doodle_plane.gif" w="70%" position="relative" zIndex={3} alt="" />
-      <Image src="/space_planet-clouds.png" w="100%" position="absolute" bottom={0} left={0} zIndex={0} alt="" />
+      <Image
+        src="/doodle_plane.gif"
+        w="70%"
+        position="relative"
+        zIndex={3}
+        alt=""
+      />
+      <Image
+        src="/space_planet-clouds.png"
+        w="100%"
+        position="absolute"
+        bottom={0}
+        left={0}
+        zIndex={0}
+        alt=""
+      />
     </Flex>
   );
 }
