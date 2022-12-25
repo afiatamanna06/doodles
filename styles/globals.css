@@ -10,11 +10,11 @@
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(45deg, rgb(121, 232, 179), rgb(140, 125, 234), #FC7CC5, transparent);
+    background: linear-gradient(45deg, rgb(140, 125, 234), #FC7CC5, rgb(121, 232, 179), transparent);
     border-radius: 6px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(45deg, rgb(121, 232, 179), rgb(140, 125, 234), #FC7CC5, transparent);
+    background: linear-gradient(45deg, rgb(140, 125, 234), #FC7CC5, rgb(121, 232, 179), transparent);
   }
