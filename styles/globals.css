@@ -1,1 +1,20 @@
-
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #99E2FF;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, rgb(121, 232, 179), rgb(140, 125, 234), #FC7CC5, transparent);
+    border-radius: 6px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, rgb(121, 232, 179), rgb(140, 125, 234), #FC7CC5, transparent);
+  }
