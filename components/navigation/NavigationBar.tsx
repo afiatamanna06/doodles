@@ -26,7 +26,15 @@ import { navigationLinks } from "./NavigationLinks";
 function NavigationBar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <Box w="full" position="relative" zIndex={99} px="4" py="2" borderBottom="1px" borderColor="blackAlpha.400">
+    <Box
+      w="full"
+      position="relative"
+      zIndex={99}
+      px="4"
+      py="2"
+      borderBottom="1px"
+      borderColor="blackAlpha.400"
+    >
       <Center>
         <Flex maxW="74rem" w="full" justify="space-between" alignItems="center">
           <Flex alignItems="center">
@@ -97,7 +105,11 @@ function NavigationBar() {
               </Flex>
             ))}
             <Flex flex="1" justify="center">
-              <Link href="https://shop.doodles.app/password" target="_blank" passHref>
+              <Link
+                href="https://shop.doodles.app/password"
+                target="_blank"
+                passHref
+              >
                 <Button variant="ghost" fontSize="xl">
                   Shop
                 </Button>
