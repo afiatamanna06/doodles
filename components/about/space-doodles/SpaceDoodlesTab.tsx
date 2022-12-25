@@ -24,40 +24,37 @@ function SpaceDoodlesTab() {
         <Image src="/space_doodles_logo_new.png" w="60%" h="80%" alt="" />
       </Flex>
       <Flex direction="column" alignItems="center" gap={6}>
-          <Box
-            fontSize={["2xl"]}
-            textShadow="1px 2px 0px #80b1ff"
+        <Box fontSize={["2xl"]} textShadow="1px 2px 0px #80b1ff">
+          Space Doodles is the first, small step towards discovering the Doodle
+          universe with dozens of spacecraft designed by Burnt Toast.
+        </Box>
+        <Box fontSize="xl">
+          All Original Doodles receive a free ship and can launch it into space
+          where it will sync with its pilot and establish attributes like
+          “bladder management”, “piloting ability”, and more.
+        </Box>
+        <Box>
+          <Link
+            href="https://opensea.io/collection/space-doodles-official"
+            target="_blank"
+            passHref
           >
-            Space Doodles is the first, small step towards discovering the
-            Doodle universe with dozens of spacecraft designed by Burnt Toast.
-          </Box>
-          <Box fontSize="xl">
-            All Original Doodles receive a free ship and can launch it into
-            space where it will sync with its pilot and establish attributes
-            like “bladder management”, “piloting ability”, and more.
-          </Box>
-          <Box>
-            <Link
-              href="https://opensea.io/collection/space-doodles-official"
-              target="_blank"
-              passHref
+            <Button
+              borderColor="#a4a4f4"
+              px={8}
+              bg="white"
+              borderBottomWidth="2px"
+              color="#6b6b9f"
+              borderRadius="lg"
+              _hover={{ opacity: ".85" }}
+              _active={{ opacity: ".85" }}
+              _focus={{ opacity: ".85" }}
             >
-              <Button
-                borderColor="#a4a4f4"
-                px={8}
-                bg="white"
-                borderBottomWidth="2px"
-                color="#6b6b9f"
-                borderRadius="lg"
-                _hover={{ opacity: ".85" }}
-                _active={{ opacity: ".85" }}
-                _focus={{ opacity: ".85" }}
-              >
-                <Box fontSize="lg">browse space doodles</Box>
-              </Button>
-            </Link>
-          </Box>
-        </Flex>
+              <Box fontSize="lg">browse space doodles</Box>
+            </Button>
+          </Link>
+        </Box>
+      </Flex>
     </Flex>
   );
 }

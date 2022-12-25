@@ -21,7 +21,10 @@ function SpaceDoodlesWeb() {
       <Flex gap={10}>
         <Image src="/space_doodles_logo_new.png" w="20%" h="65%" alt="" />
         <Flex direction="column" gap={6}>
-          <Box fontSize={["xl", "xl", "xl", "2xl"]} textShadow="1px 2px 0px #80b1ff">
+          <Box
+            fontSize={["xl", "xl", "xl", "2xl"]}
+            textShadow="1px 2px 0px #80b1ff"
+          >
             Space Doodles is the first, small step towards discovering the
             Doodle universe with dozens of spacecraft designed by Burnt Toast.
           </Box>
