@@ -74,9 +74,19 @@ function AuctionSection() {
               borderRadius="xl"
               alignItems="center"
             >
-              <Image src="/auction-box-header.png" w={["60%", "60%", "50%", "90%"]} position="absolute" top={[-8, -8, -12, -12]} left={["20%", "20%", "25%", "5%"]} zIndex={1} alt="" />
+              <Image
+                src="/auction-box-header.png"
+                w={["60%", "60%", "50%", "90%"]}
+                position="absolute"
+                top={[-8, -8, -12, -12]}
+                left={["20%", "20%", "25%", "5%"]}
+                zIndex={1}
+                alt=""
+              />
               <Box fontSize="xl">the auction has ended</Box>
-              <Box fontSize="sm" mb="4">no new bids will be accepted</Box>
+              <Box fontSize="sm" mb="4">
+                no new bids will be accepted
+              </Box>
               <Button
                 as={ConnectButton}
                 label="connect"

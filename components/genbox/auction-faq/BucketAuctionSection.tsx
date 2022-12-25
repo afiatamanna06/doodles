@@ -30,7 +30,7 @@ function BucketAuctionSection() {
         <Box w={["15%", "15%", "15%", "15%"]}>Boxes</Box>
         <Box w={["15%", "15%", "15%", "15%"]}>Refund</Box>
       </Flex>
-      {bucketData.map(({bid, bidder, boxes, refund}, idx) => (
+      {bucketData.map(({ bid, bidder, boxes, refund }, idx) => (
         <Flex
           key={bid}
           bg="rgba(255, 255, 255, 0.55)"
@@ -42,13 +42,29 @@ function BucketAuctionSection() {
           borderRadius="lg"
           fontSize="sm"
         >
-          <Box w="10%" overflow="hidden">{idx+1}</Box>
+          <Box w="10%" overflow="hidden">
+            {idx + 1}
+          </Box>
           <Flex w="15%" gap={1} overflow="hidden">
             <Box>{bid}</Box>
           </Flex>
-          <Box w="45%" overflow="hidden">{bidder}</Box>
-          <Box w="15%" color="rgb(115 244 194)"><Box px="2" bg="#fafafa" rounded="full" w="min-content" overflow="hidden">{boxes}</Box></Box>
-          <Box w="15%" overflow="hidden">{refund}</Box>
+          <Box w="45%" overflow="hidden">
+            {bidder}
+          </Box>
+          <Box w="15%" color="rgb(115 244 194)">
+            <Box
+              px="2"
+              bg="#fafafa"
+              rounded="full"
+              w="min-content"
+              overflow="hidden"
+            >
+              {boxes}
+            </Box>
+          </Box>
+          <Box w="15%" overflow="hidden">
+            {refund}
+          </Box>
         </Flex>
       ))}
       <Flex direction="column" w="full" h="100%" position="relative" gap={1}>
@@ -64,8 +80,21 @@ function BucketAuctionSection() {
           + 4346 more bids winning
         </Flex>
         <Box bg="rgb(140 125 234)" w="full" rounded="full" h=".2rem"></Box>
-        <Flex direction="column" fontSize="xs" fontWeight="bold" top={["32%", "32%", "13%", "13%"]} left="3%" color="white" borderRadius={["lg", "lg", "xl", "xl"]} p={["1", "1", "2", "2"]} position="absolute" bg="rgb(140 125 234)">
-          <Box display={["none", "none", "flex", "flex", "flex"]}>Current Price:</Box>
+        <Flex
+          direction="column"
+          fontSize="xs"
+          fontWeight="bold"
+          top={["32%", "32%", "13%", "13%"]}
+          left="3%"
+          color="white"
+          borderRadius={["lg", "lg", "xl", "xl"]}
+          p={["1", "1", "2", "2"]}
+          position="absolute"
+          bg="rgb(140 125 234)"
+        >
+          <Box display={["none", "none", "flex", "flex", "flex"]}>
+            Current Price:
+          </Box>
           <Box>0.508 ETH</Box>
         </Flex>
         <Flex
