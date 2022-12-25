@@ -8,7 +8,13 @@ import SpaceDoodles from "../components/about/space-doodles/SpaceDoodles";
 
 function About() {
   return (
-    <Flex direction="column" position="relative" w="full" overflow="hidden" bgGradient="linear(180deg, #FFFFFF 70%, #99E2FF)">
+    <Flex
+      direction="column"
+      position="relative"
+      w="full"
+      overflow="hidden"
+      bgGradient="linear(180deg, #FFFFFF 70%, #99E2FF)"
+    >
       <AboutHeader />
       <AboutDescription />
       <Box w="full" px="6" pb="12">
@@ -59,7 +65,7 @@ function About() {
                 titleImgW,
                 imageH,
                 imageW,
-                target
+                target,
               }) => (
                 <AboutCards
                   key={description}
@@ -83,7 +89,15 @@ function About() {
       <Box py="20">
         <CloudMarquee />
       </Box>
-      <Image src="/mountains.png" w={["100%", "100%", "80%", "40%"]} position="absolute" bottom={[-8, -8, -12, -12]} left={0} zIndex={1} alt="" />
+      <Image
+        src="/mountains.png"
+        w={["100%", "100%", "80%", "40%"]}
+        position="absolute"
+        bottom={[-8, -8, -12, -12]}
+        left={0}
+        zIndex={1}
+        alt=""
+      />
     </Flex>
   );
 }
