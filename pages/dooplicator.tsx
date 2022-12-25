@@ -102,7 +102,12 @@ function Dooplicator() {
         </Flex>
       </Flex>
       <Image src="/clouds_border_bottom.png" w={["100%"]} alt="" />
-      <Box bg="white" w="full" h="7rem" display={["none", "none", "block", "block", "block"]}></Box>
+      <Box
+        bg="white"
+        w="full"
+        h="7rem"
+        display={["none", "none", "block", "block", "block"]}
+      ></Box>
     </Flex>
   );
 }
