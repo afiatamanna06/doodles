@@ -20,7 +20,6 @@ function AuctionSection() {
         <Flex
           direction="column"
           maxW="50rem"
-          pt={["14", "28", "28"]}
           w="full"
           color="black"
           px={[4, 4, 4, 4, 0]}
@@ -28,11 +27,13 @@ function AuctionSection() {
         >
           <Image
             src="/FAQ_header.png"
+            id="FAQ"
+            pt={["14", "28", "28"]}
             mb="6"
             w={["95%", "95%", "55%", "35%"]}
             alt=""
           />
-          <Accordion defaultIndex={[0]} allowMultiple width="full" pb={["24"]}>
+          <Accordion defaultIndex={[0]} allowMultiple width="full">
             {auctionData.map(({ title, data }) => (
               <AccordionItem
                 key={title}
@@ -56,6 +57,8 @@ function AuctionSection() {
           </Accordion>
           <Flex
             gap={[4]}
+            id="results"
+            pt={["24"]}
             direction={["column", "column", "column", "row"]}
             alignItems={["start"]}
             w="full"

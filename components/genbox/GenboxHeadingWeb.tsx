@@ -44,7 +44,7 @@ function GenboxHeadingWeb() {
             </ChakraLink>
             &nbsp;and&nbsp;
             <ChakraLink textDecoration="underline" fontWeight="semibold">
-              <Link href="https://docs.doodles.app/terms-of-service-bucket-auction">Bucket Auction Terms of Service</Link>
+              <Link href="https://docs.doodles.app/terms-of-service-bucket-auction" target="_blank">Bucket Auction Terms of Service</Link>
             </ChakraLink>
             . View the&nbsp;
             <ChakraLink textDecoration="underline">
