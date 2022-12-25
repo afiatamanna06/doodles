@@ -50,7 +50,7 @@ function NavigationBar() {
                 borderTopRadius="xl"
               >
                 <DrawerHeader>
-                  <NavigationBarDrawer />
+                  <NavigationBarDrawer onDrawerClose={onClose} />
                 </DrawerHeader>
                 <DrawerFooter borderTopWidth="1px">
                   <Flex justify="center" w="full" onClick={onClose}>

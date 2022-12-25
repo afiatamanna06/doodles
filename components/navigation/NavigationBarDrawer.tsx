@@ -13,7 +13,11 @@ import {
 import Link from "next/link";
 import { navigationLinks } from "./NavigationLinks";
 
-function NavigationBarDrawer() {
+interface propTypes {
+  onDrawerClose: any;
+}
+
+function NavigationBarDrawer({ onDrawerClose }: propTypes) {
   return (
     <Flex justify="center">
       <Flex direction="column" alignItems="center">
@@ -40,7 +44,7 @@ function NavigationBarDrawer() {
                         target={target ? "_blank" : "_self"}
                         passHref
                       >
-                        <Box textAlign="center" color="#6681c5">{name}</Box>
+                        <Box textAlign="center" onClick={onDrawerClose} color="#6681c5">{name}</Box>
                       </Link>
                     ))}
                   </AccordionPanel>
@@ -48,7 +52,7 @@ function NavigationBarDrawer() {
               </AccordionItem>
             ))}
             <Link href="https://shop.doodles.app/password" target="_blank" passHref>
-              <Box fontWeight="bold" textAlign="center" fontSize="lg">
+              <Box fontWeight="bold" textAlign="center" onClick={onDrawerClose} fontSize="lg">
                 Shop
               </Box>
             </Link>
@@ -74,7 +78,7 @@ function NavigationBarDrawer() {
                         target={target ? "_blank" : "_self"}
                         passHref
                       >
-                        <Box textAlign="center" color="#6681c5">{name}</Box>
+                        <Box textAlign="center" onClick={onDrawerClose} color="#6681c5">{name}</Box>
                       </Link>
                     ))}
                   </AccordionPanel>
