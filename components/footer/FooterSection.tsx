@@ -31,13 +31,22 @@ function FooterSection() {
                 {title}
               </Box>
               {links.map(({ path, name, target }) => (
-                <Link key={path} href={path} target={ target ? "_blank" : "_self" } passHref>
+                <Link
+                  key={path}
+                  href={path}
+                  target={target ? "_blank" : "_self"}
+                  passHref
+                >
                   <Box>{name}</Box>
                 </Link>
               ))}
             </Flex>
           ))}
-          <Link href="https://shop.doodles.app/password" target="_blank" passHref>
+          <Link
+            href="https://shop.doodles.app/password"
+            target="_blank"
+            passHref
+          >
             <Box fontWeight="bold" fontSize="lg">
               Shop
             </Box>
@@ -48,7 +57,12 @@ function FooterSection() {
                 {title}
               </Box>
               {links.map(({ path, name, target }) => (
-                <Link key={path} target={ target ? "_blank" : "_self" } href={path} passHref>
+                <Link
+                  key={path}
+                  target={target ? "_blank" : "_self"}
+                  href={path}
+                  passHref
+                >
                   <Box>{name}</Box>
                 </Link>
               ))}
@@ -98,7 +112,9 @@ function FooterSection() {
         >
           <Flex direction="column" gap={1}>
             <Image src="/doodles_emoji_pink.png" w="6rem" alt="" />
-            <Box color="#FC7CC5" fontSize="xs">Copyright: © Doodles, LLC. All rights reserved.</Box>
+            <Box color="#FC7CC5" fontSize="xs">
+              Copyright: © Doodles, LLC. All rights reserved.
+            </Box>
           </Flex>
           <Flex gap={3}>
             {socialLinks.map(({ path, icon }) => (
