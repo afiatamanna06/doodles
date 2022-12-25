@@ -1,4 +1,4 @@
-import { Box, Flex, Image } from "@chakra-ui/react"
+import { Box, Flex, Image } from "@chakra-ui/react";
 import Link from "next/link";
 
 interface propTypes {
@@ -15,9 +15,31 @@ interface propTypes {
   target: boolean;
 }
 
-function AboutCards({bg, titleImg, description, link, path, image, titleImgH, titleImgW, imageW, imageH, target}: propTypes) {
+function AboutCards({
+  bg,
+  titleImg,
+  description,
+  link,
+  path,
+  image,
+  titleImgH,
+  titleImgW,
+  imageW,
+  imageH,
+  target,
+}: propTypes) {
   return (
-    <Flex direction="column" justify="space-between" bg={bg} p="6" flex="1" h="max-content" borderRadius="2xl" minH={["28rem", "28rem", "", "26rem"]} gap={4}>
+    <Flex
+      direction="column"
+      justify="space-between"
+      bg={bg}
+      p="6"
+      flex="1"
+      h="max-content"
+      borderRadius="2xl"
+      minH={["28rem", "28rem", "", "26rem"]}
+      gap={4}
+    >
       <Flex direction="column" alignItems="start" h="100%" gap={4}>
         <Image src={titleImg} w={titleImgW} h={titleImgH} alt="" />
         <Box>{description}</Box>
@@ -29,7 +51,7 @@ function AboutCards({bg, titleImg, description, link, path, image, titleImgH, ti
         <Image src={image} w={imageW} h={imageH} alt="" />
       </Flex>
     </Flex>
-  )
+  );
 }
 
-export default AboutCards
+export default AboutCards;
